@@ -1,0 +1,131 @@
+* Testbench for two-input logic functions
+
+.option method=key
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt_mm
+.option wnflag=1
+
+* DUT
+.include ./sky130_as_sc_hs__nand2_1.spice
+
+* Power supply
+VDD VPWR 0 1.8V
+VSS VGND 0 0V
+
+* Reference voltages
+V80 9 0 1.44
+V20 8 0 0.36
+V50 7 0 0.9
+
+R1 VNB GND 0
+R2 VPB VPWR 0
+
+C621 Y GND 10fF
+
+* Input Signals
+.param low_A = 0V
+.param high_A = 0V
+.param low_B = 0V
+.param high_B = 0V
+.param slewr = 0.1ns
+Va A GND PULSE( low_A high_A 0 slewr slewr 5ns 10ns )
+Vb B GND PULSE( low_B high_B 0 slewr slewr 5ns 10ns )
+
+* Simulation Control
+.tran 1n 55n
+.control
+
+set transition_times = ( 0.01ns 0.02305058ns 0.05313292ns 0.1224745ns 0.2823108ns 0.6507428ns 1.5ns )
+set load_values = ( 0.0005p 0.001346174p 0.003624369p 0.009758063p 0.02627211p 0.07073365p 0.1904396p )
+
+echo "BEGIN" > delay_measures.txt
+echo "Index 1" >> delay_measures.txt
+foreach val3 $transition_times
+	let temp = $val3 * 1000000000
+	echo $&temp >> delay_measures.txt
+end
+
+echo "Index 2" >> delay_measures.txt
+foreach val3 $load_values
+	let temp = $val3 * 1000000000000
+	echo $&temp >> delay_measures.txt
+end
+
+set plotstr = ' '
+set plotstr2 = ' '
+
+let index = 0
+let which = 0
+let which_transition = 0
+
+repeat 2
+	if which = 0
+		echo "A" >> delay_measures.txt
+	else
+		echo "B" >> delay_measures.txt
+	end
+	echo "rise_time, fall_time, rise_delay, fall_delay" >> delay_measures.txt
+	foreach val2 $transition_times
+		foreach val1 $load_values
+			stop
+			remzerovec
+
+			let index = index + 1
+			echo ac sim no. $&index',' LOAD=$val1
+
+			reset
+			if which = 0
+				alterparam high_A = 1.8V
+				alterparam low_A = 0V
+				alterparam high_B = 1.8V
+				alterparam low_B = 1.8V
+			else
+				alterparam high_B = 1.8V
+				alterparam low_B = 0V
+				alterparam high_A = 1.8V
+				alterparam low_A = 1.8V
+			end
+			alterparam slewr = $val2
+			reset
+			alter C621 $val1
+			run
+
+			let range=1.8
+			let twenty=0.2*range
+			let eighty=0.8*range
+			let fifty=0.5*range
+			let eighty_percent = v(9)
+			let twenty_percent = v(8)
+			let fifty_percent = v(7)
+			settype voltage eighty_percent
+			settype voltage twenty_percent
+			settype voltage fifty_percent
+			meas TRAN rise_time TRIG Y VAL=twenty RISE=3 TARG Y VAL=eighty RISE=3
+			meas TRAN fall_time TRIG Y VAL=eighty FALL=3 TARG Y VAL=twenty FALL=3
+			if which = 0
+				meas TRAN rise_delay TRIG A VAL=fifty RISE=3 TARG Y VAL=fifty FALL=3
+				meas TRAN fall_delay TRIG A VAL=fifty FALL=3 TARG Y VAL=fifty RISE=3
+			else
+				meas TRAN rise_delay TRIG B VAL=fifty RISE=3 TARG Y VAL=fifty FALL=3
+				meas TRAN fall_delay TRIG B VAL=fifty FALL=3 TARG Y VAL=fifty RISE=3
+			end
+			
+			if which_transition = 0 and which = 0
+				set plotstr = ( $plotstr {$curplot}.v(Y) )
+			end
+			if which_transition = 3 and which = 0
+				set plotstr2 = ( $plotstr2 {$curplot}.v(Y) )
+			end
+			echo $&rise_time',' $&fall_time',' $&rise_delay',' $&fall_delay >> delay_measures.txt
+		end
+		let which_transition = which_transition + 1
+	end
+	let which = 1
+end
+
+set nolegend
+plot $plotstr xlimit 15.5n 22.5n ylimit 0 2 eighty_percent twenty_percent fifty_percent
+
+plot $plotstr2 xlimit 15.5n 22.5n ylimit 0 2 eighty_percent twenty_percent fifty_percent
+
+.endc
+.end

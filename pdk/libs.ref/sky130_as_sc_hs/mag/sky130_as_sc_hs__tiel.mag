@@ -1,0 +1,90 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1733756727
+<< nwell >>
+rect -38 262 314 582
+<< pwell >>
+rect 2 44 274 204
+rect 26 -15 76 44
+rect 26 -20 66 -15
+<< poly >>
+rect 60 460 208 494
+rect 60 262 70 460
+rect 196 262 208 460
+rect 60 244 208 262
+rect 60 156 208 234
+rect 60 64 140 156
+rect 196 64 208 156
+rect 60 48 208 64
+<< polycont >>
+rect 70 262 196 460
+rect 140 64 196 156
+<< rmp >>
+rect 60 234 208 244
+<< locali >>
+rect 0 561 276 562
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 276 561
+rect 0 526 276 527
+rect 60 460 208 478
+rect 60 262 70 460
+rect 196 262 208 460
+rect 60 228 208 262
+rect 130 156 208 172
+rect 130 64 140 156
+rect 196 64 208 156
+rect 130 21 208 64
+rect 0 17 276 21
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 276 17
+<< viali >>
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
+<< metal1 >>
+rect 0 561 276 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 276 561
+rect 0 496 276 527
+rect 0 17 276 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 276 17
+rect 0 -48 276 -17
+<< labels >>
+rlabel comment s 0 0 0 0 4 tiel
+flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
+port 1 nsew ground bidirectional
+flabel pwell s 46 0 46 0 0 FreeSans 200 0 0 0 VNB
+flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
+port 2 nsew power bidirectional
+flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
+flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
+port 4 nsew power bidirectional abutment
+rlabel metal1 0 496 276 592 1 VPWR
+port 4 nsew power bidirectional abutment
+rlabel metal1 0 -48 276 48 1 VGND
+port 3 nsew ground bidirectional abutment
+flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+port 3 nsew ground bidirectional abutment
+flabel locali 153 408 187 442 0 FreeSans 200 0 0 0 ZERO
+port 5 nsew signal output
+flabel locali 170 425 170 425 0 FreeSans 200 0 0 0 ZERO
+<< properties >>
+string FIXED_BBOX 0 0 276 544
+string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__tiel.gds
+string LEFclass CORE
+string LEFsite unithd
+string LEFsymmetry X Y R90
+<< end >>
