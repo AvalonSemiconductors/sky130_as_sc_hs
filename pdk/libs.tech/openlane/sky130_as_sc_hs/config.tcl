@@ -26,7 +26,7 @@ set ::env(SYNTH_TIEHI_PORT) "sky130_as_sc_hs__tieh ONE"
 set ::env(SYNTH_TIELO_PORT) "sky130_as_sc_hs__tiel ZERO"
 
 # cts defaults
-set ::env(CTS_ROOT_BUFFER) sky130_as_sc_hs__buff_11
+set ::env(CTS_ROOT_BUFFER) sky130_as_sc_hs__clkbuff_11
 set ::env(CELL_CLK_PORT) CLK
 
 # Placement defaults
@@ -47,11 +47,11 @@ set ::env(DPL_CELL_PADDING) {0}
 set ::env(CELL_PAD_EXCLUDE) "sky130_as_sc_hs__tap* sky130_as_sc_hs__decap* sky130_as_sc_hs__fill*"
 
 # Clk Buffers info CTS data
-set ::env(ROOT_CLK_BUFFER) sky130_as_sc_hs__buff_11
-set ::env(CLK_BUFFER) sky130_as_sc_hs__buff_11
+set ::env(ROOT_CLK_BUFFER) sky130_as_sc_hs__clkbuff_11
+set ::env(CLK_BUFFER) sky130_as_sc_hs__clkbuff_8
 set ::env(CLK_BUFFER_INPUT) A
 set ::env(CLK_BUFFER_OUTPUT) Y
-set ::env(CTS_CLK_BUFFER_LIST) "sky130_as_sc_hs__buff_11 sky130_as_sc_hs__buff_2"
+set ::env(CTS_CLK_BUFFER_LIST) "sky130_as_sc_hs__clkbuff_8"
 set ::env(FP_PDN_RAIL_WIDTH) 0.48
 # TODO: Unknown for this standard cell set
 set ::env(CTS_MAX_CAP) 1.53169

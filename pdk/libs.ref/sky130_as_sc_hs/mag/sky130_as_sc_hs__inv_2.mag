@@ -1,49 +1,49 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1733768868
+timestamp 1733919962
 << nwell >>
 rect -38 262 406 582
 << pwell >>
 rect 24 44 320 204
 rect 24 -15 76 44
 rect 24 -22 70 -15
-<< nmos >>
-rect 118 56 158 194
-rect 218 56 258 194
 << pmos >>
-rect 118 322 158 496
-rect 218 322 258 496
+rect 118 298 158 496
+rect 218 298 258 496
+<< nmoslvt >>
+rect 118 56 158 172
+rect 218 56 258 172
 << ndiff >>
-rect 54 174 118 194
-rect 54 66 70 174
-rect 104 66 118 174
+rect 54 160 118 172
+rect 54 66 70 160
+rect 104 66 118 160
 rect 54 56 118 66
-rect 158 186 218 194
-rect 158 80 172 186
-rect 206 80 218 186
+rect 158 164 218 172
+rect 158 80 172 164
+rect 206 80 218 164
 rect 158 56 218 80
-rect 258 172 312 194
-rect 258 68 270 172
-rect 304 68 312 172
+rect 258 158 312 172
+rect 258 68 270 158
+rect 304 68 312 158
 rect 258 56 312 68
 << pdiff >>
 rect 56 488 118 496
 rect 56 344 70 488
 rect 104 344 118 488
-rect 56 322 118 344
+rect 56 298 118 344
 rect 158 460 218 496
 rect 158 330 172 460
 rect 206 330 218 460
-rect 158 322 218 330
+rect 158 298 218 330
 rect 258 488 318 496
 rect 258 344 270 488
 rect 304 344 318 488
-rect 258 322 318 344
+rect 258 298 318 344
 << ndiffc >>
-rect 70 66 104 174
-rect 172 80 206 186
-rect 270 68 304 172
+rect 70 66 104 160
+rect 172 80 206 164
+rect 270 68 304 158
 << pdiffc >>
 rect 70 344 104 488
 rect 172 330 206 460
@@ -51,19 +51,20 @@ rect 270 344 304 488
 << poly >>
 rect 118 496 158 522
 rect 218 496 258 522
-rect 118 288 158 322
-rect 60 272 158 288
-rect 218 272 258 322
-rect 60 238 76 272
-rect 110 238 258 272
-rect 60 232 258 238
-rect 60 224 158 232
-rect 118 194 158 224
-rect 218 194 258 232
+rect 118 272 158 298
+rect 218 272 258 298
+rect 118 262 258 272
+rect 64 250 258 262
+rect 64 216 80 250
+rect 114 232 258 250
+rect 114 216 158 232
+rect 64 206 158 216
+rect 118 172 158 206
+rect 218 172 258 232
 rect 118 30 158 56
 rect 218 30 258 56
 << polycont >>
-rect 76 238 110 272
+rect 80 216 114 250
 << locali >>
 rect 0 561 368 562
 rect 0 527 29 561
@@ -80,26 +81,25 @@ rect 64 322 114 344
 rect 164 460 214 486
 rect 164 330 172 460
 rect 206 330 214 460
-rect 60 272 126 288
-rect 60 238 76 272
-rect 110 238 126 272
-rect 60 224 126 238
-rect 62 174 112 190
-rect 62 66 70 174
-rect 104 66 112 174
+rect 64 250 130 262
+rect 64 216 80 250
+rect 114 216 130 250
+rect 64 210 130 216
+rect 62 160 112 176
+rect 62 66 70 160
+rect 104 66 112 160
 rect 62 21 112 66
-rect 164 186 214 330
+rect 164 164 214 330
 rect 264 344 270 488
 rect 304 344 314 488
 rect 264 322 314 344
-rect 164 80 172 186
-rect 206 80 214 186
+rect 164 80 172 164
+rect 206 80 214 164
 rect 164 62 214 80
-rect 256 172 310 190
-rect 256 68 270 172
-rect 304 68 310 172
-rect 256 56 310 68
-rect 256 21 306 56
+rect 262 158 306 174
+rect 262 68 270 158
+rect 304 68 306 158
+rect 262 21 306 68
 rect 0 17 368 21
 rect 0 -17 29 17
 rect 63 -17 121 17
@@ -146,12 +146,12 @@ rlabel metal1 0 -48 368 48 1 VGND
 port 4 nsew ground bidirectional abutment
 rlabel metal1 0 496 368 592 1 VPWR
 port 3 nsew power bidirectional abutment
-flabel locali 68 238 102 272 0 FreeSans 200 0 0 0 A
-port 5 nsew signal input
-flabel locali 85 255 102 272 0 FreeSans 200 0 0 0 A
 flabel locali 170 238 204 272 0 FreeSans 200 0 0 0 Y
 port 6 nsew signal output
 flabel locali 187 255 187 255 0 FreeSans 200 0 0 0 Y
+flabel locali 85 221 119 255 0 FreeSans 200 0 0 0 A
+port 7 nsew signal output
+flabel locali 102 238 102 238 0 FreeSans 200 0 0 0 A
 << properties >>
 string FIXED_BBOX 0 0 368 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__inv_2.gds

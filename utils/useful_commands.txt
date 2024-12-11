@@ -314,6 +314,12 @@ lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/s
 For DFFs:
 rm -rf /tmp/lctime-* && lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.0014, 0.0035, 0.009, 0.024, 0.0621, 0.16" --slew-times "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__dfxtp_1.spice --cell sky130_as_sc_hs__dfxtp_1 --output ./test.lib --related-pin-transition "0.01, 0.5, 1.5"
 
+For the x11 clockbuffer specifically:
+lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.0019, 0.0072, 0.0276, 0.105, 0.402, 1.5" --slew-times "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__clkbuff_11.spice --cell sky130_as_sc_hs__clkbuff_11 --output ./test.lib
+
+For the x8 clockbuffer specifically:
+lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.00175, 0.00612, 0.0213, 0.074, 0.260, 0.91" --slew-times "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__clkbuff_8.spice --cell sky130_as_sc_hs__clkbuff_8 --output ./test.lib
+
 libertymerge -b template.lib -u test.lib -o aaaa.lib
 
 R111 VNB VGND 0
