@@ -72,15 +72,15 @@ port 2 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 4 nsew power bidirectional abutment
-rlabel metal1 0 496 276 592 1 VPWR
+rlabel metal1 s 0 496 276 592 1 VPWR
 port 4 nsew power bidirectional abutment
-rlabel metal1 0 -48 276 48 1 VGND
+rlabel metal1 s 0 -48 276 48 1 VGND
 port 3 nsew ground bidirectional abutment
-flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
-flabel locali 153 408 187 442 0 FreeSans 200 0 0 0 ZERO
+flabel locali s 153 408 187 442 0 FreeSans 200 0 0 0 ZERO
 port 5 nsew signal output
-flabel locali 170 425 170 425 0 FreeSans 200 0 0 0 ZERO
+flabel locali s 170 425 170 425 0 FreeSans 200 0 0 0 ZERO
 << properties >>
 string FIXED_BBOX 0 0 276 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__tiel.gds

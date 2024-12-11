@@ -51,27 +51,27 @@ port 1 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 2 nsew power bidirectional abutment
-flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 0 -48 184 48 1 VGND
+rlabel metal1 s 0 -48 184 48 1 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 0 496 184 592 1 VPWR
+rlabel metal1 s 0 496 184 592 1 VPWR
 port 2 nsew power bidirectional abutment
 flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
 port 4 nsew ground bidirectional
 flabel pwell s 46 0 46 0 0 FreeSans 200 0 0 0 VNB
-flabel locali 102 238 136 272 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 102 238 136 272 0 FreeSans 200 0 0 0 DIODE
 port 5 nsew signal input
-flabel locali 119 255 119 255 0 FreeSans 200 0 0 0 DIODE
-flabel locali 51 238 85 272 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 119 255 119 255 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 51 238 85 272 0 FreeSans 200 0 0 0 DIODE
 port 5 nsew signal input
-flabel locali 68 255 68 255 0 FreeSans 200 0 0 0 DIODE
-flabel locali 102 340 136 374 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 68 255 68 255 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 102 340 136 374 0 FreeSans 200 0 0 0 DIODE
 port 5 nsew signal input
-flabel locali 119 357 119 357 0 FreeSans 200 0 0 0 DIODE
-flabel locali 51 340 85 374 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 119 357 119 357 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 51 340 85 374 0 FreeSans 200 0 0 0 DIODE
 port 5 nsew signal input
-flabel locali 68 357 68 357 0 FreeSans 200 0 0 0 DIODE
+flabel locali s 68 357 68 357 0 FreeSans 200 0 0 0 DIODE
 << properties >>
 string FIXED_BBOX 0 0 184 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__diode_2.gds

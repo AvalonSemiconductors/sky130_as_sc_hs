@@ -187,11 +187,11 @@ port 2 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 3 nsew power bidirectional abutment
-flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 4 nsew ground bidirectional abutment
-rlabel metal1 0 -48 1472 48 1 VGND
+rlabel metal1 s 0 -48 1472 48 1 VGND
 port 4 nsew ground bidirectional abutment
-rlabel metal1 0 496 1472 592 1 VPWR
+rlabel metal1 s 0 496 1472 592 1 VPWR
 port 3 nsew power bidirectional abutment
 << properties >>
 string FIXED_BBOX 0 0 1472 544

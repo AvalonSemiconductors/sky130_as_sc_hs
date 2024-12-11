@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1733842347
+timestamp 1733959029
 << nwell >>
 rect -38 262 1510 582
 << pwell >>
@@ -240,7 +240,7 @@ rect 432 280 1366 290
 rect 44 244 60 278
 rect 360 244 376 278
 rect 432 246 456 280
-rect 1356 246 1382 280
+rect 1328 246 1382 280
 rect 44 234 374 244
 rect 81 158 111 234
 rect 168 158 198 234
@@ -275,7 +275,7 @@ rect 1230 24 1260 50
 rect 1318 24 1348 50
 << polycont >>
 rect 60 244 360 278
-rect 456 246 1356 280
+rect 456 246 1328 280
 << locali >>
 rect 0 561 1472 562
 rect 0 527 29 561
@@ -328,20 +328,19 @@ rect 1272 393 1306 409
 rect 1360 476 1394 492
 rect 1184 359 1218 368
 rect 1360 359 1394 368
-rect 1428 359 1466 374
 rect 122 323 444 357
-rect 478 325 1466 359
+rect 478 325 1444 359
 rect 410 291 444 323
 rect 38 278 376 289
 rect 38 244 60 278
 rect 360 244 376 278
-rect 410 280 1382 291
+rect 410 280 1344 291
 rect 410 246 456 280
-rect 1356 246 1382 280
+rect 1328 246 1344 280
 rect 410 210 444 246
 rect 122 174 444 210
-rect 1416 208 1466 325
-rect 478 174 1466 208
+rect 1378 208 1444 325
+rect 478 174 1444 208
 rect 122 150 156 174
 rect 36 132 70 148
 rect 36 21 70 64
@@ -373,7 +372,6 @@ rect 1360 150 1394 174
 rect 1182 56 1216 72
 rect 1272 118 1306 140
 rect 1272 21 1306 58
-rect 1428 140 1466 174
 rect 1360 56 1394 72
 rect 0 17 1472 21
 rect 0 -17 29 17
@@ -475,27 +473,27 @@ port 1 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 2 nsew power bidirectional abutment
-flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 0 -48 1472 48 1 VGND
+rlabel metal1 s 0 -48 1472 48 1 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 0 496 1472 592 1 VPWR
+rlabel metal1 s 0 496 1472 592 1 VPWR
 port 2 nsew power bidirectional abutment
-flabel locali 170 255 204 289 0 FreeSans 200 0 0 0 A
+flabel locali s 170 255 204 289 0 FreeSans 200 0 0 0 A
 port 5 nsew signal input
-flabel locali 187 272 187 272 0 FreeSans 200 0 0 0 A
-flabel locali 255 255 289 289 0 FreeSans 200 0 0 0 A
+flabel locali s 187 272 187 272 0 FreeSans 200 0 0 0 A
+flabel locali s 255 255 289 289 0 FreeSans 200 0 0 0 A
 port 5 nsew signal input
-flabel locali 272 272 272 272 0 FreeSans 200 0 0 0 A
-flabel locali 68 255 102 289 0 FreeSans 200 0 0 0 A
+flabel locali s 272 272 272 272 0 FreeSans 200 0 0 0 A
+flabel locali s 68 255 102 289 0 FreeSans 200 0 0 0 A
 port 5 nsew signal input
-flabel locali 1428 306 1462 340 0 FreeSans 200 0 0 0 Y
+flabel locali s 1394 306 1428 340 0 FreeSans 200 0 0 0 Y
 port 6 nsew signal output
-flabel locali 1445 323 1445 323 0 FreeSans 200 0 0 0 Y
-flabel locali 1428 187 1462 221 0 FreeSans 200 0 0 0 Y
+flabel locali s 1411 323 1411 323 0 FreeSans 200 0 0 0 Y
+flabel locali s 1394 187 1428 221 0 FreeSans 200 0 0 0 Y
 port 6 nsew signal output
-flabel locali 1445 204 1445 204 0 FreeSans 200 0 0 0 Y
-flabel locali 85 272 85 272 0 FreeSans 200 0 0 0 A
+flabel locali s 1411 204 1411 204 0 FreeSans 200 0 0 0 Y
+flabel locali s 85 272 85 272 0 FreeSans 200 0 0 0 A
 << properties >>
 string FIXED_BBOX 0 0 1472 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__buff_11.gds
