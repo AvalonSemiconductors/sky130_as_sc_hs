@@ -1,51 +1,53 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1732639285
+timestamp 1734011590
 << nwell >>
-rect -38 262 406 582
+rect -38 262 498 582
 << pwell >>
 rect 22 48 346 204
 rect 26 44 320 48
 rect 26 -20 90 44
 << locali >>
-rect 0 561 368 562
+rect 0 561 460 562
 rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
 rect 247 527 305 561
-rect 339 527 368 561
-rect 0 526 368 527
-rect 0 17 368 21
+rect 339 527 460 561
+rect 0 526 460 527
+rect 0 17 460 21
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
 rect 247 -17 305 17
-rect 339 -17 368 17
+rect 339 -17 460 17
 << viali >>
 rect 29 527 63 561
 rect 121 527 155 561
 rect 213 527 247 561
 rect 305 527 339 561
+rect 397 527 431 561
 rect 29 -17 63 17
 rect 121 -17 155 17
 rect 213 -17 247 17
 rect 305 -17 339 17
+rect 397 -17 431 17
 << metal1 >>
-rect 0 561 368 592
+rect 0 561 460 592
 rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
 rect 247 527 305 561
-rect 339 527 368 561
-rect 0 496 368 527
-rect 0 17 368 48
+rect 339 527 460 561
+rect 0 496 460 527
+rect 0 17 460 48
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
 rect 247 -17 305 17
-rect 339 -17 368 17
-rect 0 -48 368 -17
+rect 339 -17 460 17
+rect 0 -48 460 -17
 << labels >>
 rlabel comment s 0 0 0 0 4 aaaaaaa
 flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
@@ -58,12 +60,12 @@ flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 2 nsew power bidirectional abutment
 flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 s 0 -48 368 48 1 VGND
+rlabel metal1 s 0 -48 460 48 1 VGND
 port 3 nsew ground bidirectional abutment
-rlabel metal1 s 0 496 368 592 1 VPWR
+rlabel metal1 s 0 496 460 592 1 VPWR
 port 2 nsew power bidirectional abutment
 << properties >>
-string FIXED_BBOX 0 0 368 544
+string FIXED_BBOX 0 0 460 544
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
