@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1733678203
+timestamp 1734087866
 << nwell >>
 rect -38 262 314 582
 << pwell >>
@@ -9,24 +9,39 @@ rect 2 44 274 204
 rect 26 -15 76 44
 rect 26 -20 66 -15
 << locali >>
-rect 0 526 8 562
-rect 268 526 276 562
-rect 0 -15 8 21
-rect 268 -15 276 21
+rect 0 561 276 562
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 276 561
+rect 0 526 276 527
+rect 0 17 276 21
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 276 17
 << viali >>
-rect 8 526 268 562
-rect 8 -15 268 21
+rect 29 527 63 561
+rect 121 527 155 561
+rect 213 527 247 561
+rect 29 -17 63 17
+rect 121 -17 155 17
+rect 213 -17 247 17
 << metal1 >>
-rect 0 562 276 592
-rect 0 526 8 562
-rect 268 526 276 562
-rect 0 496 276 526
-rect 0 21 276 48
-rect 0 -15 8 21
-rect 268 -15 276 21
-rect 0 -48 276 -15
+rect 0 561 276 592
+rect 0 527 29 561
+rect 63 527 121 561
+rect 155 527 213 561
+rect 247 527 276 561
+rect 0 496 276 527
+rect 0 17 276 48
+rect 0 -17 29 17
+rect 63 -17 121 17
+rect 155 -17 213 17
+rect 247 -17 276 17
+rect 0 -48 276 -17
 << labels >>
-rlabel comment s 0 0 0 0 4 aaaaaa
+rlabel comment s 0 0 0 0 4 aaaa
 flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
 port 1 nsew ground bidirectional
 flabel pwell s 46 0 46 0 0 FreeSans 200 0 0 0 VNB
@@ -35,13 +50,15 @@ port 2 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 4 nsew power bidirectional abutment
-rlabel metal1 0 496 276 592 1 VPWR
+rlabel metal1 s 0 496 276 592 1 VPWR
 port 4 nsew power bidirectional abutment
-rlabel metal1 0 -48 276 48 1 VGND
+rlabel metal1 s 0 -48 276 48 1 VGND
 port 3 nsew ground bidirectional abutment
-flabel metal1 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
 << properties >>
+string FIXED_BBOX 0 0 276 544
+string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__tieh.gds
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
