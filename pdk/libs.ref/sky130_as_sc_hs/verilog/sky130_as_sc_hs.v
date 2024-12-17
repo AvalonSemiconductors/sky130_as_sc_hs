@@ -43,6 +43,21 @@ assign Y = ~(A & B);
 
 endmodule
 
+module sky130_as_sc_hs__nand2b_1 (
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~(!A & B);
+
+endmodule
+
 module sky130_as_sc_hs__nor2_1 (
 	input A,
 	input B,
@@ -55,6 +70,21 @@ module sky130_as_sc_hs__nor2_1 (
 );
 
 assign Y = ~(A | B);
+
+endmodule
+
+module sky130_as_sc_hs__nor2b_1 (
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~(!A | B);
 
 endmodule
 
