@@ -324,6 +324,9 @@ nand2_2:
 inv_2:
 ./characterize.sh sky130_as_sc_hs__inv_2 "0.0005, 0.00144, 0.004, 0.011, 0.034, 0.1, 0.24" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
+or2_2:
+./characterize.sh sky130_as_sc_hs__or2_2 "0.0005, 0.00144, 0.004, 0.0114, 0.035, 0.11, 0.257" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
+
 For x2 cells (buff_2):
 lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.001464, 0.0043, 0.0125, 0.037, 0.108, 0.317" --slew-times "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__buff_2.spice --cell sky130_as_sc_hs__buff_2 --output ./test.lib
 

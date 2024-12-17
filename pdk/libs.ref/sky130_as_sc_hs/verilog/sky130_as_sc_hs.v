@@ -28,7 +28,7 @@ assign Y = ~A;
 
 endmodule
 
-module sky130_as_sc_hs__nand2_1 (
+module sky130_as_sc_hs__nand2_2 (
 	input A,
 	input B,
 	output Y,
@@ -43,7 +43,7 @@ assign Y = ~(A & B);
 
 endmodule
 
-module sky130_as_sc_hs__nand2b_1 (
+module sky130_as_sc_hs__nand2b_2 (
 	input A,
 	input B,
 	output Y,
@@ -58,7 +58,22 @@ assign Y = ~(!A & B);
 
 endmodule
 
-module sky130_as_sc_hs__nor2_1 (
+module sky130_as_sc_hs__and2_2(
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A & B;
+
+endmodule
+
+module sky130_as_sc_hs__nor2_2 (
 	input A,
 	input B,
 	output Y,
@@ -73,7 +88,7 @@ assign Y = ~(A | B);
 
 endmodule
 
-module sky130_as_sc_hs__nor2b_1 (
+module sky130_as_sc_hs__nor2b_2 (
 	input A,
 	input B,
 	output Y,
@@ -85,6 +100,21 @@ module sky130_as_sc_hs__nor2b_1 (
 );
 
 assign Y = ~(!A | B);
+
+endmodule
+
+module sky130_as_sc_hs__or2_2 (
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A | B;
 
 endmodule
 
