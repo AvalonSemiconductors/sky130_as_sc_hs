@@ -49,16 +49,14 @@ I am also experimenting with different ways of constructing DFFs that will hopef
 
 These are the cells I am going to work on next, ordered by priority:
 
-1. buff_4 or buff_6
-2. xnor2_2
+1. buff_4 or buff_6 (and clkbuff variants)
+2. xnor2_2 (potentially using faster alternative design)
 3. nand3_2
 4. nand3b_2
 5. nor3b_2
-6. mux2i_2
-7. mux2_2
-8. dfxtp_2 (DFF with noninverting output, higher drive strength)
-9. dfxbp_2 (DFF with complementary outputs)
-10. dfxtn_2 (DFF, latching on falling edge)
-11. dfxbn_2 (DFF with complementary outputs, latching on falling edge)
-12. fa_2 (full adder)
-13. Slimmer tie cells
+6. dfxtp_2 (DFF with noninverting output, higher drive strength)
+7. dfxbp_2 (DFF with complementary outputs)
+8. dfxtn_2 (DFF, latching on falling edge)
+9. dfxbn_2 (DFF with complementary outputs, latching on falling edge)
+10. fa_2 (full adder)
+11. Slimmer tie cells

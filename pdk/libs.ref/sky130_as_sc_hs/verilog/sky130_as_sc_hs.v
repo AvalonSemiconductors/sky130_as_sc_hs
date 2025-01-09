@@ -14,6 +14,20 @@ assign Y = ~A;
 
 endmodule
 
+module sky130_as_sc_hs__inv_4 (
+	input A,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~A;
+
+endmodule
+
 module sky130_as_sc_hs__inv_11 (
 	input A,
 	output Y,
@@ -40,6 +54,21 @@ module sky130_as_sc_hs__nand2_2 (
 );
 
 assign Y = ~(A & B);
+
+endmodule
+
+module sky130_as_sc_hs__mux2_2(
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB,
+	input A,
+	input B,
+	input S,
+	output Y
+);
+
+assign Y = (S&B) | ((!S)&A);
 
 endmodule
 
@@ -185,7 +214,7 @@ module sky130_as_sc_hs__diode_2 (
 
 endmodule
 
-module sky130_as_sc_hs__dfxtp_1 (
+module sky130_as_sc_hs__dfxtp_2 (
 	input CLK,
 	input D,
 	output reg Q,
