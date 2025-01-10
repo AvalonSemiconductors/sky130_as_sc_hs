@@ -6,7 +6,7 @@
 
 sky130_as_sc_hs is a custom standard cell library for the sky130A PDK that is compatible with the default OpenLane flow in caravel and openframe wrappers.
 
-The eventual goal is it to build a high-speed library that gives a performance edge at the cost of decreased density. Right now, the library is still deep in development and still delivers poorer results than the default sky130_fd_sc_hd.
+The eventual goal is it to build a high-speed library that gives a performance edge at the cost of decreased density. Right now, the library is still deep in development, but already appears to deliver better results than sky130_fd_sc_hd.
 
 This project makes use of [lctime](https://codeberg.org/librecell/lctime) for characterization.
 
@@ -49,14 +49,13 @@ I am also experimenting with different ways of constructing DFFs that will hopef
 
 These are the cells I am going to work on next, ordered by priority:
 
-1. buff_4 or buff_6 (and clkbuff variants)
-2. xnor2_2 (potentially using faster alternative design)
-3. nand3_2
-4. nand3b_2
-5. nor3b_2
-6. dfxtp_2 (DFF with noninverting output, higher drive strength)
-7. dfxbp_2 (DFF with complementary outputs)
-8. dfxtn_2 (DFF, latching on falling edge)
-9. dfxbn_2 (DFF with complementary outputs, latching on falling edge)
-10. fa_2 (full adder)
-11. Slimmer tie cells
+1. xnor2_2 (potentially using faster alternative design)
+2. nand3_2
+3. nand3b_2
+4. nor3b_2
+5. dfxtp_2 (DFF with noninverting output, higher drive strength)
+6. dfxbp_2 (DFF with complementary outputs)
+7. dfxtn_2 (DFF, latching on falling edge)
+8. dfxbn_2 (DFF with complementary outputs, latching on falling edge)
+9. fa_2 (full adder)
+10. Slimmer tie cells
