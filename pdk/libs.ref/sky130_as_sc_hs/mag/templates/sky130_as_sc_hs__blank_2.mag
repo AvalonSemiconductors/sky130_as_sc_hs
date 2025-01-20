@@ -51,7 +51,6 @@ port 4 nsew ground bidirectional
 flabel pwell s 46 0 46 0 0 FreeSans 200 0 0 0 VNB
 << properties >>
 string FIXED_BBOX 0 0 184 544
-string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__diode_2.gds
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90

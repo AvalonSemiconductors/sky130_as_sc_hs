@@ -1,27 +1,28 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1734011590
+timestamp 1736960494
 << nwell >>
 rect -38 262 498 582
 << pwell >>
-rect 22 48 346 204
-rect 26 44 320 48
-rect 26 -20 90 44
+rect 0 22 460 204
+rect 26 -20 90 22
 << locali >>
 rect 0 561 460 562
 rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
 rect 247 527 305 561
-rect 339 527 460 561
+rect 339 527 397 561
+rect 431 527 460 561
 rect 0 526 460 527
 rect 0 17 460 21
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
 rect 247 -17 305 17
-rect 339 -17 460 17
+rect 339 -17 397 17
+rect 431 -17 460 17
 << viali >>
 rect 29 527 63 561
 rect 121 527 155 561
@@ -39,14 +40,16 @@ rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
 rect 247 527 305 561
-rect 339 527 460 561
+rect 339 527 397 561
+rect 431 527 460 561
 rect 0 496 460 527
 rect 0 17 460 48
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
 rect 247 -17 305 17
-rect 339 -17 460 17
+rect 339 -17 397 17
+rect 431 -17 460 17
 rect 0 -48 460 -17
 << labels >>
 rlabel comment s 0 0 0 0 4 aaaaaaa

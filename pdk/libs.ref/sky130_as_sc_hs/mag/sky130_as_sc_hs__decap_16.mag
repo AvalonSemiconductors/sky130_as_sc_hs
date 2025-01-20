@@ -1,22 +1,22 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1733769045
+timestamp 1737306155
 << nwell >>
 rect -38 262 1510 582
 << pwell >>
-rect 24 44 1424 204
-rect 24 -22 104 44
-<< nmos >>
-rect 120 60 1344 186
+rect 0 -4 1472 204
+rect 24 -22 104 -4
 << pmos >>
 rect 120 346 1344 492
+<< nmoslvt >>
+rect 120 60 1344 178
 << ndiff >>
-rect 54 172 120 186
-rect 54 68 72 172
-rect 106 68 120 172
+rect 54 170 120 178
+rect 54 68 72 170
+rect 106 68 120 170
 rect 54 60 120 68
-rect 1344 170 1412 186
+rect 1344 170 1412 178
 rect 1344 68 1360 170
 rect 1394 68 1412 170
 rect 1344 60 1412 68
@@ -30,7 +30,7 @@ rect 1344 354 1362 484
 rect 1396 354 1412 484
 rect 1344 346 1412 354
 << ndiffc >>
-rect 72 68 106 172
+rect 72 68 106 170
 rect 1360 68 1394 170
 << pdiffc >>
 rect 72 354 106 480
@@ -46,7 +46,7 @@ rect 1278 264 1294 298
 rect 1328 264 1344 298
 rect 1278 254 1344 264
 rect 112 212 178 228
-rect 120 186 1344 212
+rect 120 178 1344 212
 rect 120 30 1344 60
 << polycont >>
 rect 128 228 162 262
@@ -83,8 +83,7 @@ rect 162 228 178 262
 rect 1278 264 1294 298
 rect 1328 264 1344 298
 rect 1278 188 1344 264
-rect 72 172 1394 188
-rect 106 170 1394 172
+rect 72 170 1394 188
 rect 106 68 1360 170
 rect 72 21 1394 68
 rect 0 17 1472 21
@@ -199,4 +198,7 @@ string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__decap_16.
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
+string MASKHINTS_LVTN 0 -4 1472 222
+string MASKHINTS_NSDM 0 -38 1472 203
+string MASKHINTS_PSDM 0 321 1472 582
 << end >>

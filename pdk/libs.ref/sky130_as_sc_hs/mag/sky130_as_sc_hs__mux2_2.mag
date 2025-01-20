@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1736514979
+timestamp 1736644016
 << nwell >>
 rect -38 262 866 582
 << pwell >>
@@ -348,4 +348,7 @@ string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__mux2_2.gd
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
+string MASKHINTS_LVTN 0 -4 828 212
+string MASKHINTS_NSDM 0 -34 828 201
+string MASKHINTS_PSDM 0 289 828 578
 << end >>

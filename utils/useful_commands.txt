@@ -1,307 +1,3 @@
-Size 1
-
-box size 0.46u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 0.840u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.030u 0.220u
-box size 0.400u 0.800u
-paint pwell
-box size 0.460u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 0.380u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.170u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.250u 2.930u
-label VDD north met1
-box position 0.270u -0.170u
-label GND north met1
-
-Size 2
-
-box size 0.920u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 1.300u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.050u 0.220u
-box size 0.820u 0.800u
-paint pwell
-box size 0.920u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 0.840u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.180u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 3
-
-box size 1.380u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 1.760u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.010u 0.220u
-box size 1.360u 0.800u
-paint pwell
-box size 1.380u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 1.300u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.170u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 4
-
-box size 1.840u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 2.220u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.210u 0.220u
-box size 1.390u 0.800u
-paint pwell
-box size 1.840u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 1.760u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.200u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 8
-
-box size 3.680u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 4.06u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.210u 0.220u
-box size 3.230u 0.800u
-paint pwell
-box size 3.680u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 3.60u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.200u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 12
-
-box size 5.520u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 5.90u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.210u 0.220u
-box size 5.07u 0.800u
-paint pwell
-box size 5.520u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 5.44u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.200u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 16
-
-box size 7.360u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 7.740u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.210u 0.220u
-box size 6.910u 0.800u
-paint pwell
-box size 7.360u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 7.280u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.200u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-
-Size 18
-
-box size 8.280u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 8.660u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box position 0.210u 0.220u
-box size 7.830u 0.800u
-paint pwell
-box size 8.280u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
-box size 8.200u 0.180u
-box position 0.040u -0.075u
-paint viali
-box position 0.040u 2.63u
-paint viali
-box size 0.200u 0.350u
-box position 0.210u -0.075u
-paint pwell
-box size 0 0
-box position 0.280u 0.010u
-label VNB north pwell
-box position 0.2u 2.71u
-label VPB north nwell
-box position 0.650u 2.940u
-label VDD north met1
-box position 0.880u -0.190u
-label GND north met1
-
-Size 19
-
-box size 8.740u 0.480u
-box position 0.000u -0.240u
-paint met1
-box position 0.000u 2.480u
-paint met1
-box size 9.120u 1.600u
-box position -0.190u 1.310u
-paint nwell
-box size 8.740u 0.180u
-box position 0.000u -0.075u
-paint locali
-box position 0.000u 2.630u
-paint locali
 
 extract all
 ext2sim labels on
@@ -317,7 +13,7 @@ clkbuff_4:
 ./characterize.sh sky130_as_sc_hs__clkbuff_4 "0.0005, 0.0016, 0.005, 0.016, 0.051, 0.162, 0.517" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 buff_4:
-./characterize.sh sky130_as_sc_hs__buff_4 "0.0005, 0.00167, 0.00525, 0.0172, 0.059, 0.18, 0.495" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
+./characterize.sh sky130_as_sc_hs__buff_4 "0.0005, 0.00168, 0.00526, 0.0174, 0.062, 0.193, 0.507" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 mux2_2:
 ./characterize.sh sky130_as_sc_hs__mux2_2 "0.0005, 0.00144, 0.004, 0.011, 0.034, 0.1, 0.244" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
@@ -329,16 +25,16 @@ nand2_2 or nand3_2:
 ./characterize.sh sky130_as_sc_hs__nand2_2 "0.0005, 0.00144, 0.0042, 0.0121, 0.035, 0.102, 0.274" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 inv_2:
-./characterize.sh sky130_as_sc_hs__inv_2 "0.0005, 0.00144, 0.004, 0.011, 0.034, 0.1, 0.244" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
+./characterize.sh sky130_as_sc_hs__inv_2 "0.0005, 0.00177, 0.005, 0.017, 0.042, 0.15, 0.316" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 inv_4:
-./characterize.sh sky130_as_sc_hs__inv_4 "0.0005, 0.00162, 0.0052, 0.0166, 0.054, 0.175, 0.472" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
+./characterize.sh sky130_as_sc_hs__inv_4 "0.0005, 0.0019, 0.0071, 0.025, 0.0825, 0.212, 0.615" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
-or2_2:
+or2_2 or and2_2:
 ./characterize.sh sky130_as_sc_hs__or2_2 "0.0005, 0.00144, 0.004, 0.0114, 0.035, 0.11, 0.257" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 buff_2:
-./characterize.sh sky130_as_sc_hs__buff_2 "0.0005, 0.00144, 0.00415, 0.0123, 0.036, 0.107, 0.246" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
+./characterize.sh sky130_as_sc_hs__buff_2 "0.0005, 0.00144, 0.00416, 0.0125, 0.037, 0.109, 0.25" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 nor2b_2:
 ./characterize.sh sky130_as_sc_hs__nor2b_2 "0.0005, 0.00128, 0.00328, 0.0084, 0.0215, 0.055, 0.125" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
@@ -349,14 +45,14 @@ nand2b_2:
 buff_11:
 ./characterize.sh sky130_as_sc_hs__buff_11 "0.0005, 0.0023, 0.011, 0.05, 0.23, 1.1, 5.0" "0.01, 0.029, 0.08, 0.22, 0.621, 1.77, 5.0"
 
-For DFFs (dfxtp_2):
-rm -rf /tmp/lctime-* && lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.0014, 0.0042, 0.012, 0.035, 0.1, 0.3" --slew-times "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__dfxtp_2.spice --cell sky130_as_sc_hs__dfxtp_2 --output ./test.lib --related-pin-transition "0.01, 0.5, 1.5"
+dfxtp_2:
+./characterize_flop.sh sky130_as_sc_hs__dfxtp_2 "0.0005, 0.00177, 0.005, 0.017, 0.042, 0.15, 0.3" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5" "0.01, 0.5, 1.5"
 
-For the x11 clockbuffer specifically:
-lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.0019, 0.0072, 0.0276, 0.105, 0.402, 1.5" --slew-times "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__clkbuff_11.spice --cell sky130_as_sc_hs__clkbuff_11 --output ./test.lib
+clkbuff_8:
+./characterize.sh sky130_as_sc_hs__clkbuff_8 "0.0005, 0.00175, 0.00612, 0.0213, 0.074, 0.260, 0.91" "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5"
 
-For the x8 clockbuffer specifically:
-lctime --liberty template.lib --library "/foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt" --output-loads "0.0005, 0.00175, 0.00612, 0.0213, 0.074, 0.260, 0.91" --slew-times "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5" --spice sky130_as_sc_hs__clkbuff_8.spice --cell sky130_as_sc_hs__clkbuff_8 --output ./test.lib
+clkbuff_11:
+./characterize.sh sky130_as_sc_hs__clkbuff_11 "0.0005, 0.0019, 0.0072, 0.0276, 0.105, 0.402, 1.5" "0.01, 0.023, 0.055, 0.12, 0.28, 0.65, 1.5"
 
 libertymerge -b template.lib -u test.lib -o aaaa.lib
 

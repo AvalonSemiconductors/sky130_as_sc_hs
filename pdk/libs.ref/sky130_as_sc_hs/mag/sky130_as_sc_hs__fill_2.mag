@@ -49,4 +49,7 @@ string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__fill_2.gd
 string LEFclass CORE SPACER
 string LEFsite unithd
 string LEFsymmetry X Y R90
+string MASKHINTS_LVTN 0 -4 184 214
+string MASKHINTS_NSDM 0 -38 184 204
+string MASKHINTS_PSDM 0 272 184 582
 << end >>

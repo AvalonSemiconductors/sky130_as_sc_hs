@@ -1,12 +1,12 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1734087866
+timestamp 1736958919
 << nwell >>
 rect -38 262 314 582
 << pwell >>
-rect 2 44 274 204
-rect 26 -15 76 44
+rect 0 22 276 204
+rect 26 -15 76 22
 rect 26 -20 66 -15
 << locali >>
 rect 0 561 276 562
@@ -58,7 +58,6 @@ flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew ground bidirectional abutment
 << properties >>
 string FIXED_BBOX 0 0 276 544
-string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__tieh.gds
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90

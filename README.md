@@ -43,19 +43,15 @@ From there, the makefile actions to run the OpenLane flow should work as normal.
 
 ## Work in progress
 
-Currently, there are two areas in which progress is being made on this library. The first is expand the amount of combinatorial logic cells available, as a lot of basic logic is still missing, followed by more specific merge cells.
+Currently, there are two areas in which progress is being made on this library. The first is finishing the set of basic logic gate functions by creating XOR or XNOR cells. Then, all the existing cells will undergo an optimization process (i.e. expanding transistor widths as much as possible).
 
 I am also experimenting with different ways of constructing DFFs that will hopefully have improved timing characteristics over the traditional leader/follower DFF already in the library.
 
 These are the cells I am going to work on next, ordered by priority:
 
-1. xnor2_2 (potentially using faster alternative design)
-2. nand3_2
-3. nand3b_2
-4. nor3b_2
-5. dfxtp_2 (DFF with noninverting output, higher drive strength)
-6. dfxbp_2 (DFF with complementary outputs)
-7. dfxtn_2 (DFF, latching on falling edge)
-8. dfxbn_2 (DFF with complementary outputs, latching on falling edge)
-9. fa_2 (full adder)
-10. Slimmer tie cells
+1. xor2_2
+2. dfxtp_4 (DFF with noninverting output, higher drive strength)
+3. dfxnp_2 (DFF with inverting output)
+4. dfxtn_2 (DFF, latching on falling edge with noninverting output)
+5. aoi211_2
+6. Slimmer tie cells
