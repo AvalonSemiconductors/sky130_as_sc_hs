@@ -49,9 +49,9 @@ I am also experimenting with different ways of constructing DFFs that will hopef
 
 These are the cells I am going to work on next, ordered by priority:
 
-1. xor2_2
-2. dfxtp_4 (DFF with noninverting output, higher drive strength)
-3. dfxnp_2 (DFF with inverting output)
-4. dfxtn_2 (DFF, latching on falling edge with noninverting output)
-5. aoi211_2
-6. Slimmer tie cells
+1. dfxtp_4 (DFF with noninverting output, higher drive strength)
+2. dfxnp_2 (DFF with inverting output)
+3. dfxtn_2 (DFF, latching on falling edge with noninverting output)
+4. aoi211_2
+5. Slimmer tie cells
+6. More _4 cells where possible

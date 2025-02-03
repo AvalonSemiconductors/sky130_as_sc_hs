@@ -1,4 +1,3 @@
-
 extract all
 ext2sim labels on
 ext2sim
@@ -8,6 +7,9 @@ ext2spice lvs
 ext2spice cthresh 0
 ext2spice extresist on
 ext2spice
+
+xnor2_2:
+./characterize.sh sky130_as_sc_hs__xnor2_2 "0.0005, 0.00128, 0.0033, 0.0086, 0.022, 0.058, 0.1465" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
 clkbuff_4:
 ./characterize.sh sky130_as_sc_hs__clkbuff_4 "0.0005, 0.0016, 0.005, 0.016, 0.051, 0.162, 0.517" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
