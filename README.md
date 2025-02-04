@@ -8,7 +8,7 @@ sky130_as_sc_hs is a custom standard cell library for the sky130A PDK that is co
 
 The eventual goal is it to build a high-speed library that gives a performance edge at the cost of decreased density. Right now, the library is still deep in development, but already appears to deliver better results than sky130_fd_sc_hd.
 
-This project makes use of [lctime](https://codeberg.org/librecell/lctime) for characterization.
+This project makes use of [lctime](https://codeberg.org/TholinVali/lctime) (custom fork) for characterization.
 
 ## Usage
 
