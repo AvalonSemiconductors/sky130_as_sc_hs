@@ -190,18 +190,18 @@ flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
 port 1 nsew ground bidirectional
 flabel pwell s 46 0 46 0 0 FreeSans 200 0 0 0 VNB
 flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
-port 1 nsew power bidirectional
+port 2 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
-port 2 nsew power bidirectional abutment
+port 3 nsew power bidirectional abutment
 flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
-port 3 nsew ground bidirectional abutment
+port 4 nsew ground bidirectional abutment
 rlabel metal1 s 0 -48 460 48 1 VGND
-port 3 nsew ground bidirectional abutment
+port 4 nsew ground bidirectional abutment
 rlabel metal1 s 0 496 460 592 1 VPWR
-port 2 nsew power bidirectional abutment
+port 3 nsew power bidirectional abutment
 flabel locali s 34 238 68 272 0 FreeSans 200 0 0 0 A
-port 4 nsew signal input
+port 7 nsew signal input
 flabel locali s 51 255 51 255 0 FreeSans 200 0 0 0 A
 flabel locali s 357 221 391 255 0 FreeSans 200 0 0 0 Y
 port 6 nsew signal output

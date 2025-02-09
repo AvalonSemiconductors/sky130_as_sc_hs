@@ -23,7 +23,7 @@ set ::env(FP_ENDCAP_CELL) "sky130_as_sc_hs__decap_3"
 
 set ::env(SYNTH_DRIVING_CELL) "sky130_as_sc_hs__inv_2"
 set ::env(SYNTH_DRIVING_CELL_PIN) "Y"
-set ::env(OUTPUT_CAP_LOAD) "33.442" ; # TODO: unknown for this standard cell set, copied from sky130_fd_sc_hd
+set ::env(OUTPUT_CAP_LOAD) "33.442" ;
 set ::env(SYNTH_MIN_BUF_PORT) "sky130_as_sc_hs__buff_11 A Y"
 set ::env(SYNTH_TIEHI_PORT) "sky130_as_sc_hs__tieh ONE"
 set ::env(SYNTH_TIELO_PORT) "sky130_as_sc_hs__tiel ZERO"

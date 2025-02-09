@@ -28,7 +28,36 @@ assign Y = ~A;
 
 endmodule
 
+module sky130_as_sc_hs__inv_6 (
+	input A,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~A;
+
+endmodule
+
 module sky130_as_sc_hs__xnor2_2 (
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A&B) | ((!A)&(!B));
+
+endmodule
+
+module sky130_as_sc_hs__xnor2_4 (
 	input A,
 	input B,
 	output Y,
@@ -74,7 +103,121 @@ assign Y = ~(A & B & C);
 
 endmodule
 
+module sky130_as_sc_hs__nand4_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~(A & B & C & D);
+
+endmodule
+
+module sky130_as_sc_hs__nor3_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~(A | B | C);
+
+endmodule
+
+module sky130_as_sc_hs__maj3_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | (B & C) | (A & C);
+
+endmodule
+
+module sky130_as_sc_hs__maj3_4 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | (B & C) | (A & C);
+
+endmodule
+
+module sky130_as_sc_hs__aoi211_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A & B) | C | D);
+
+endmodule
+
+module sky130_as_sc_hs__iao211_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A | B) & C & D);
+
+endmodule
+
 module sky130_as_sc_hs__mux2_2(
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB,
+	input A,
+	input B,
+	input S,
+	output Y
+);
+
+assign Y = (S&B) | ((!S)&A);
+
+endmodule
+
+module sky130_as_sc_hs__mux2_4(
 	input VPWR,
 	input VGND,
 	input VPB,
@@ -105,6 +248,21 @@ assign Y = A | (!B);
 endmodule
 
 module sky130_as_sc_hs__and2_2(
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A & B;
+
+endmodule
+
+module sky130_as_sc_hs__and2_4(
 	input A,
 	input B,
 	output Y,
@@ -164,6 +322,21 @@ assign Y = A | B;
 
 endmodule
 
+module sky130_as_sc_hs__or2_4 (
+	input A,
+	input B,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A | B;
+
+endmodule
+
 module sky130_as_sc_hs__buff_2 (
 	input A,
 	output Y,
@@ -179,6 +352,20 @@ assign Y = A;
 endmodule
 
 module sky130_as_sc_hs__buff_4 (
+	input A,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A;
+
+endmodule
+
+module sky130_as_sc_hs__buff_6 (
 	input A,
 	output Y,
 	
@@ -272,6 +459,113 @@ module sky130_as_sc_hs__dfxtp_2 (
 
 always @(posedge CLK) begin
 	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxtp_4 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(posedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxtn_2 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(negedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxtn_4 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(negedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxfp_2 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(posedge CLK) begin
+	Q <= !D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxfp_4 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(posedge CLK) begin
+	Q <= !D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dfxbp_2 (
+	input CLK,
+	input D,
+	output Q,
+	output NQ,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+reg state;
+assign Q = state;
+assign NQ = !state;
+
+always @(posedge CLK) begin
+	state <= D;
 end
 
 endmodule

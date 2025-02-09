@@ -1,14 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1736768830
+timestamp 1738930830
 << nwell >>
-rect -38 262 774 582
+rect -38 262 866 582
 << pwell >>
-rect 0 22 736 204
+rect 0 28 828 204
+rect 0 22 736 28
 rect 26 -20 90 22
 << locali >>
-rect 0 561 736 562
+rect 0 561 828 562
 rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
@@ -17,9 +18,10 @@ rect 339 527 397 561
 rect 431 527 489 561
 rect 523 527 581 561
 rect 615 527 673 561
-rect 707 527 736 561
-rect 0 526 736 527
-rect 0 17 736 21
+rect 707 527 765 561
+rect 799 527 828 561
+rect 0 526 828 527
+rect 0 17 828 21
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
@@ -28,7 +30,8 @@ rect 339 -17 397 17
 rect 431 -17 489 17
 rect 523 -17 581 17
 rect 615 -17 673 17
-rect 707 -17 736 17
+rect 707 -17 765 17
+rect 799 -17 828 17
 << viali >>
 rect 29 527 63 561
 rect 121 527 155 561
@@ -38,6 +41,7 @@ rect 397 527 431 561
 rect 489 527 523 561
 rect 581 527 615 561
 rect 673 527 707 561
+rect 765 527 799 561
 rect 29 -17 63 17
 rect 121 -17 155 17
 rect 213 -17 247 17
@@ -46,8 +50,9 @@ rect 397 -17 431 17
 rect 489 -17 523 17
 rect 581 -17 615 17
 rect 673 -17 707 17
+rect 765 -17 799 17
 << metal1 >>
-rect 0 561 736 592
+rect 0 561 828 592
 rect 0 527 29 561
 rect 63 527 121 561
 rect 155 527 213 561
@@ -56,9 +61,10 @@ rect 339 527 397 561
 rect 431 527 489 561
 rect 523 527 581 561
 rect 615 527 673 561
-rect 707 527 736 561
-rect 0 496 736 527
-rect 0 17 736 48
+rect 707 527 765 561
+rect 799 527 828 561
+rect 0 496 828 527
+rect 0 17 828 48
 rect 0 -17 29 17
 rect 63 -17 121 17
 rect 155 -17 213 17
@@ -67,8 +73,9 @@ rect 339 -17 397 17
 rect 431 -17 489 17
 rect 523 -17 581 17
 rect 615 -17 673 17
-rect 707 -17 736 17
-rect 0 -48 736 -17
+rect 707 -17 765 17
+rect 799 -17 828 17
+rect 0 -48 828 -17
 << labels >>
 rlabel comment s 0 0 0 0 4 aaaaaaa
 flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
@@ -81,12 +88,12 @@ flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 3 nsew power bidirectional abutment
 flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
 port 4 nsew ground bidirectional abutment
-rlabel metal1 s 0 -48 736 48 1 VGND
+rlabel metal1 s 0 -48 828 48 1 VGND
 port 4 nsew ground bidirectional abutment
-rlabel metal1 s 0 496 736 592 1 VPWR
+rlabel metal1 s 0 496 828 592 1 VPWR
 port 3 nsew power bidirectional abutment
 << properties >>
-string FIXED_BBOX 0 0 736 544
+string FIXED_BBOX 0 0 828 544
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
