@@ -1571,7 +1571,7 @@ MACRO sky130_as_sc_hs__dfxtp_4
   CLASS CORE ;
   FOREIGN sky130_as_sc_hs__dfxtp_4 ;
   ORIGIN 0.000 0.000 ;
-  SIZE 8.740 BY 2.720 ;
+  SIZE 9.660 BY 2.720 ;
   SYMMETRY X Y R90 ;
   SITE unithd ;
   PIN VNB
