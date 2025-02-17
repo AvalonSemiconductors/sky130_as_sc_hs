@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1739377520
+timestamp 1739569896
 << nwell >>
 rect -38 262 1786 582
 << pwell >>
@@ -24,8 +24,8 @@ rect 1352 385 1382 496
 rect 1542 298 1572 496
 rect 1628 298 1658 496
 << nmoslvt >>
-rect 83 49 113 182
-rect 170 49 200 182
+rect 83 48 113 182
+rect 170 48 200 182
 rect 368 49 398 140
 rect 468 49 498 138
 rect 654 49 684 138
@@ -35,21 +35,21 @@ rect 964 49 994 138
 rect 1150 49 1180 138
 rect 1250 49 1280 148
 rect 1352 49 1382 148
-rect 1542 49 1572 178
-rect 1628 49 1658 178
+rect 1542 48 1572 178
+rect 1628 48 1658 178
 << ndiff >>
 rect 30 128 83 182
 rect 30 72 38 128
 rect 72 72 83 128
-rect 30 49 83 72
+rect 30 48 83 72
 rect 113 91 170 182
 rect 113 57 124 91
 rect 158 57 170 91
-rect 113 49 170 57
+rect 113 48 170 57
 rect 200 106 258 182
 rect 200 72 212 106
 rect 246 72 258 106
-rect 200 49 258 72
+rect 200 48 258 72
 rect 312 122 368 140
 rect 312 64 322 122
 rect 356 64 368 122
@@ -92,15 +92,15 @@ rect 1427 72 1435 126
 rect 1382 49 1435 72
 rect 1489 68 1497 150
 rect 1531 68 1542 150
-rect 1489 49 1542 68
+rect 1489 48 1542 68
 rect 1572 170 1628 178
 rect 1572 76 1583 170
 rect 1617 76 1628 170
-rect 1572 49 1628 76
+rect 1572 48 1628 76
 rect 1658 166 1711 178
 rect 1658 68 1669 166
 rect 1703 68 1711 166
-rect 1658 49 1711 68
+rect 1658 48 1711 68
 << pdiff >>
 rect 28 470 83 496
 rect 28 378 38 470
@@ -294,8 +294,8 @@ rect 1444 206 1658 216
 rect 1444 200 1572 206
 rect 1542 178 1572 200
 rect 1628 178 1658 206
-rect 83 23 113 49
-rect 170 23 200 49
+rect 83 22 113 48
+rect 170 22 200 48
 rect 368 23 398 49
 rect 468 23 498 49
 rect 654 23 684 49
@@ -305,8 +305,8 @@ rect 964 23 994 49
 rect 1150 23 1180 49
 rect 1250 23 1280 49
 rect 1352 23 1382 49
-rect 1542 23 1572 49
-rect 1628 23 1658 49
+rect 1542 22 1572 48
+rect 1628 22 1658 48
 << polycont >>
 rect 54 220 88 254
 rect 492 320 526 354
@@ -682,7 +682,7 @@ string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__dfxtp_2.g
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
-string MASKHINTS_LVTN 0 -4 1748 214
-string MASKHINTS_NSDM 0 -38 1748 204
+string MASKHINTS_LVTN 0 -4 1748 218
+string MASKHINTS_NSDM 0 -38 1748 207
 string MASKHINTS_PSDM 0 272 1748 582
 << end >>

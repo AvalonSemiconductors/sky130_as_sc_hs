@@ -89,5 +89,5 @@ string LEFsite unithd
 string LEFsymmetry X Y R90
 string MASKHINTS_LVTN 0 -4 276 227
 string MASKHINTS_NSDM 0 -38 276 203
-string MASKHINTS_PSDM 0 333 276 582
+string MASKHINTS_PSDM 0 272 276 582
 << end >>

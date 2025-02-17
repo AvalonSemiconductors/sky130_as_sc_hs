@@ -311,6 +311,6 @@ string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y R90
 string MASKHINTS_LVTN 0 -4 736 216
-string MASKHINTS_NSDM 0 -38 736 201
-string MASKHINTS_PSDM 0 289 736 582
+string MASKHINTS_NSDM 0 -38 736 203
+string MASKHINTS_PSDM 0 274 736 582
 << end >>

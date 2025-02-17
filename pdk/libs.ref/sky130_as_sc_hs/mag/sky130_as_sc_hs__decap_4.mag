@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1737306050
+timestamp 1739576299
 << nwell >>
 rect -38 262 406 582
 << pwell >>
@@ -10,16 +10,16 @@ rect 26 -20 90 -4
 << pmos >>
 rect 83 360 285 492
 << nmoslvt >>
-rect 87 52 281 178
+rect 87 48 281 178
 << ndiff >>
 rect 34 160 87 178
 rect 34 64 42 160
 rect 76 64 87 160
-rect 34 52 87 64
+rect 34 48 87 64
 rect 281 160 334 178
 rect 281 64 292 160
 rect 326 64 334 160
-rect 281 52 334 64
+rect 281 48 334 64
 << pdiff >>
 rect 30 480 83 492
 rect 30 386 38 480
@@ -47,7 +47,7 @@ rect 250 238 270 272
 rect 304 238 322 272
 rect 250 214 322 238
 rect 87 178 281 214
-rect 87 26 281 52
+rect 87 22 281 48
 << polycont >>
 rect 64 278 98 312
 rect 270 238 304 272

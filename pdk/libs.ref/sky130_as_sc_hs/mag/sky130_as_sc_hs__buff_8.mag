@@ -386,7 +386,7 @@ flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
 port 1 nsew power bidirectional
 flabel nwell s 46 544 46 544 0 FreeSans 200 0 0 0 VPB
 << properties >>
-string FIXED_BBOX 0 0 828 544
+string FIXED_BBOX 0 0 1104 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__buff_8.gds
 string LEFclass CORE
 string LEFsite unithd
