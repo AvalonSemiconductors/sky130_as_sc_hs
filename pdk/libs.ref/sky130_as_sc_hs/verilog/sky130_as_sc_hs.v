@@ -409,6 +409,20 @@ assign Y = A;
 
 endmodule
 
+module sky130_as_sc_hs__buff_8 (
+	input A,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = A;
+
+endmodule
+
 module sky130_as_sc_hs__buff_11 (
 	input A,
 	output Y,
