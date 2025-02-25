@@ -61,7 +61,7 @@ MACRO sky130_as_sc_hs__buff_2
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER li1 ;
-        RECT 0.155 1.000 0.390 1.480 ;
+        RECT 0.170 1.000 0.500 1.480 ;
     END
   END A
   PIN Y
@@ -70,22 +70,22 @@ MACRO sky130_as_sc_hs__buff_2
     ANTENNADIFFAREA 0.475600 ;
     PORT
       LAYER li1 ;
-        RECT 1.050 1.910 1.320 2.420 ;
-        RECT 1.150 1.490 1.320 1.910 ;
+        RECT 1.050 1.980 1.320 2.310 ;
+        RECT 1.150 1.490 1.320 1.980 ;
         RECT 1.150 1.230 1.390 1.490 ;
-        RECT 1.150 0.800 1.320 1.230 ;
-        RECT 1.050 0.290 1.320 0.800 ;
+        RECT 1.150 0.690 1.320 1.230 ;
+        RECT 1.050 0.360 1.320 0.690 ;
     END
   END Y
   OBS
       LAYER li1 ;
         RECT 0.175 1.880 0.345 2.420 ;
-        RECT 0.175 1.710 0.880 1.880 ;
-        RECT 0.710 1.370 0.880 1.710 ;
-        RECT 0.710 1.000 0.980 1.370 ;
-        RECT 0.710 0.830 0.880 1.000 ;
-        RECT 0.175 0.660 0.880 0.830 ;
-        RECT 0.175 0.290 0.345 0.660 ;
+        RECT 0.175 1.710 0.840 1.880 ;
+        RECT 0.670 1.370 0.840 1.710 ;
+        RECT 0.670 1.000 0.980 1.370 ;
+        RECT 0.670 0.830 0.840 1.000 ;
+        RECT 0.175 0.660 0.840 0.830 ;
+        RECT 0.175 0.450 0.345 0.660 ;
   END
 END sky130_as_sc_hs__buff_2
 
@@ -164,13 +164,13 @@ MACRO sky130_as_sc_hs__buff_4
     ANTENNADIFFAREA 0.951200 ;
     PORT
       LAYER li1 ;
-        RECT 1.050 1.910 1.320 2.420 ;
+        RECT 1.050 1.910 1.320 2.240 ;
         RECT 1.150 1.520 1.320 1.910 ;
         RECT 1.930 1.520 2.100 2.450 ;
-        RECT 1.150 1.130 2.310 1.520 ;
-        RECT 1.150 0.800 1.320 1.130 ;
-        RECT 1.050 0.290 1.320 0.800 ;
-        RECT 1.930 0.280 2.100 1.130 ;
+        RECT 1.150 1.210 2.100 1.520 ;
+        RECT 1.150 0.800 1.320 1.210 ;
+        RECT 1.050 0.470 1.320 0.800 ;
+        RECT 1.930 0.600 2.100 1.210 ;
     END
   END Y
   OBS
@@ -181,7 +181,7 @@ MACRO sky130_as_sc_hs__buff_4
         RECT 0.710 0.990 0.980 1.380 ;
         RECT 0.710 0.830 0.880 0.990 ;
         RECT 0.175 0.660 0.880 0.830 ;
-        RECT 0.175 0.290 0.345 0.660 ;
+        RECT 0.175 0.450 0.345 0.660 ;
   END
 END sky130_as_sc_hs__buff_4
 
@@ -228,7 +228,7 @@ MACRO sky130_as_sc_hs__buff_6
       LAYER li1 ;
         RECT 0.175 0.105 0.345 0.790 ;
         RECT 1.045 0.105 1.215 0.830 ;
-        RECT 1.930 0.105 2.100 0.680 ;
+        RECT 1.930 0.105 2.100 0.610 ;
         RECT 2.800 0.105 2.970 0.910 ;
         RECT 3.680 0.105 3.850 0.950 ;
         RECT 0.000 -0.085 4.140 0.105 ;
@@ -267,14 +267,15 @@ MACRO sky130_as_sc_hs__buff_6
         RECT 1.610 1.460 1.780 1.690 ;
         RECT 2.370 1.460 2.540 2.450 ;
         RECT 3.230 1.460 3.400 2.450 ;
-        RECT 1.610 1.190 3.400 1.460 ;
-        RECT 1.610 0.940 1.780 1.190 ;
+        RECT 1.610 1.260 3.400 1.460 ;
+        RECT 1.610 0.940 1.780 1.260 ;
         RECT 1.590 0.830 1.780 0.940 ;
         RECT 1.490 0.770 1.780 0.830 ;
+        RECT 2.370 1.190 3.400 1.260 ;
         RECT 1.490 0.650 1.760 0.770 ;
-        RECT 1.490 0.280 1.660 0.650 ;
-        RECT 2.370 0.280 2.540 1.190 ;
-        RECT 3.230 0.280 3.400 1.190 ;
+        RECT 1.490 0.500 1.660 0.650 ;
+        RECT 2.370 0.570 2.540 1.190 ;
+        RECT 3.230 0.510 3.400 1.190 ;
     END
   END Y
   OBS
@@ -338,7 +339,7 @@ MACRO sky130_as_sc_hs__buff_8
       LAYER li1 ;
         RECT 0.175 0.105 0.345 0.790 ;
         RECT 1.045 0.105 1.215 0.960 ;
-        RECT 1.930 0.105 2.100 0.680 ;
+        RECT 1.930 0.105 2.100 0.610 ;
         RECT 2.800 0.105 2.970 0.910 ;
         RECT 3.680 0.105 3.850 0.950 ;
         RECT 4.565 0.105 4.735 0.950 ;
@@ -365,7 +366,7 @@ MACRO sky130_as_sc_hs__buff_8
     ANTENNAGATEAREA 0.738000 ;
     PORT
       LAYER li1 ;
-        RECT 0.140 0.990 0.420 1.500 ;
+        RECT 0.170 0.990 0.420 1.500 ;
     END
   END A
   PIN Y
@@ -378,13 +379,14 @@ MACRO sky130_as_sc_hs__buff_8
         RECT 2.120 1.460 2.540 1.520 ;
         RECT 3.230 1.460 3.400 2.450 ;
         RECT 4.130 1.460 4.300 2.450 ;
-        RECT 5.010 1.460 5.180 2.460 ;
-        RECT 2.120 1.140 5.180 1.460 ;
-        RECT 2.120 1.130 3.400 1.140 ;
+        RECT 5.010 1.460 5.210 2.460 ;
+        RECT 2.120 1.240 5.210 1.460 ;
+        RECT 2.120 1.130 2.540 1.240 ;
         RECT 2.370 0.280 2.540 1.130 ;
-        RECT 3.230 0.280 3.400 1.130 ;
-        RECT 4.130 0.280 4.300 1.140 ;
-        RECT 5.010 0.290 5.180 1.140 ;
+        RECT 3.230 0.550 3.400 1.240 ;
+        RECT 4.130 1.220 5.210 1.240 ;
+        RECT 4.130 0.540 4.300 1.220 ;
+        RECT 5.010 0.530 5.210 1.220 ;
     END
   END Y
   OBS
@@ -439,11 +441,11 @@ MACRO sky130_as_sc_hs__buff_11
         RECT 0.180 1.890 0.350 2.630 ;
         RECT 1.050 1.955 1.220 2.630 ;
         RECT 1.930 1.960 2.100 2.630 ;
-        RECT 2.830 1.965 3.000 2.630 ;
-        RECT 3.710 1.965 3.880 2.630 ;
-        RECT 4.590 1.965 4.760 2.630 ;
-        RECT 5.470 1.965 5.640 2.630 ;
-        RECT 6.360 1.965 6.530 2.630 ;
+        RECT 2.830 1.810 3.000 2.630 ;
+        RECT 3.710 1.810 3.880 2.630 ;
+        RECT 4.590 1.810 4.760 2.630 ;
+        RECT 5.470 1.810 5.640 2.630 ;
+        RECT 6.360 1.810 6.530 2.630 ;
       LAYER met1 ;
         RECT 0.000 2.480 7.360 2.960 ;
     END
@@ -454,16 +456,16 @@ MACRO sky130_as_sc_hs__buff_11
     SHAPE ABUTMENT ;
     PORT
       LAYER li1 ;
-        RECT 0.180 0.105 0.350 0.740 ;
+        RECT 0.180 0.105 0.350 0.910 ;
         RECT 0.970 0.310 1.300 0.560 ;
         RECT 1.850 0.310 2.180 0.560 ;
         RECT 1.050 0.105 1.220 0.310 ;
         RECT 1.930 0.105 2.100 0.310 ;
-        RECT 2.830 0.105 3.000 0.575 ;
-        RECT 3.710 0.105 3.880 0.575 ;
-        RECT 4.590 0.105 4.760 0.575 ;
-        RECT 5.470 0.105 5.640 0.575 ;
-        RECT 6.360 0.105 6.530 0.575 ;
+        RECT 2.830 0.105 3.000 0.530 ;
+        RECT 3.710 0.105 3.880 0.530 ;
+        RECT 4.590 0.105 4.760 0.540 ;
+        RECT 5.470 0.105 5.640 0.540 ;
+        RECT 6.360 0.105 6.530 0.540 ;
         RECT 0.000 -0.085 7.360 0.105 ;
       LAYER met1 ;
         RECT 0.000 -0.240 7.360 0.240 ;
@@ -485,7 +487,7 @@ MACRO sky130_as_sc_hs__buff_11
     ANTENNAGATEAREA 0.984000 ;
     PORT
       LAYER li1 ;
-        RECT 0.190 1.070 1.870 1.445 ;
+        RECT 0.190 1.080 1.870 1.445 ;
     END
   END A
   PIN Y
@@ -494,23 +496,23 @@ MACRO sky130_as_sc_hs__buff_11
     ANTENNADIFFAREA 2.902800 ;
     PORT
       LAYER li1 ;
-        RECT 2.390 1.700 2.560 2.460 ;
-        RECT 3.270 1.700 3.440 2.460 ;
-        RECT 4.150 1.700 4.320 2.460 ;
-        RECT 5.030 1.700 5.200 2.460 ;
-        RECT 5.920 1.700 6.090 2.460 ;
+        RECT 2.390 1.640 2.560 2.460 ;
+        RECT 3.270 1.640 3.440 2.460 ;
+        RECT 4.150 1.640 4.320 2.460 ;
+        RECT 5.030 1.640 5.200 2.460 ;
+        RECT 5.920 1.640 6.090 2.460 ;
         RECT 6.800 1.795 6.970 2.460 ;
-        RECT 6.800 1.700 7.220 1.795 ;
-        RECT 2.390 1.530 7.220 1.700 ;
-        RECT 6.890 0.915 7.220 1.530 ;
-        RECT 2.390 0.810 7.220 0.915 ;
-        RECT 2.390 0.745 7.030 0.810 ;
-        RECT 2.390 0.280 2.560 0.745 ;
-        RECT 3.270 0.280 3.440 0.745 ;
-        RECT 4.150 0.280 4.320 0.745 ;
-        RECT 5.030 0.280 5.200 0.745 ;
-        RECT 5.910 0.280 6.080 0.745 ;
-        RECT 6.800 0.280 6.970 0.745 ;
+        RECT 6.800 1.640 7.170 1.795 ;
+        RECT 2.390 1.470 7.170 1.640 ;
+        RECT 6.890 0.880 7.170 1.470 ;
+        RECT 2.390 0.810 7.170 0.880 ;
+        RECT 2.390 0.710 7.060 0.810 ;
+        RECT 2.390 0.440 2.560 0.710 ;
+        RECT 3.270 0.450 3.440 0.710 ;
+        RECT 4.150 0.500 4.320 0.710 ;
+        RECT 5.030 0.390 5.200 0.710 ;
+        RECT 5.910 0.500 6.080 0.710 ;
+        RECT 6.800 0.500 6.970 0.710 ;
     END
   END Y
   OBS
@@ -520,12 +522,12 @@ MACRO sky130_as_sc_hs__buff_11
         RECT 0.610 1.785 0.780 2.460 ;
         RECT 1.490 1.785 1.660 2.460 ;
         RECT 0.610 1.615 2.220 1.785 ;
-        RECT 2.050 1.350 2.220 1.615 ;
-        RECT 2.050 1.085 6.720 1.350 ;
+        RECT 2.050 1.290 2.220 1.615 ;
+        RECT 2.050 1.085 6.720 1.290 ;
         RECT 2.050 0.900 2.220 1.085 ;
         RECT 0.610 0.730 2.220 0.900 ;
-        RECT 0.610 0.280 0.780 0.730 ;
-        RECT 1.490 0.280 1.660 0.730 ;
+        RECT 0.610 0.500 0.780 0.730 ;
+        RECT 1.490 0.420 1.660 0.730 ;
   END
 END sky130_as_sc_hs__buff_11
 
@@ -890,8 +892,8 @@ MACRO sky130_as_sc_hs__maj3_2
     SHAPE ABUTMENT ;
     PORT
       LAYER li1 ;
-        RECT 0.965 0.105 1.135 0.560 ;
-        RECT 2.600 0.105 2.770 0.560 ;
+        RECT 0.965 0.105 1.135 0.540 ;
+        RECT 2.600 0.105 2.770 0.540 ;
         RECT 3.720 0.105 3.890 0.900 ;
         RECT 0.000 -0.085 4.140 0.105 ;
       LAYER met1 ;
@@ -904,7 +906,7 @@ MACRO sky130_as_sc_hs__maj3_2
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 0.760 1.070 1.340 1.330 ;
+        RECT 0.760 1.070 1.280 1.330 ;
     END
   END B
   PIN A
@@ -926,7 +928,7 @@ MACRO sky130_as_sc_hs__maj3_2
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 1.550 1.070 2.160 1.330 ;
+        RECT 1.550 1.070 2.130 1.330 ;
     END
   END C
   PIN Y
@@ -935,18 +937,17 @@ MACRO sky130_as_sc_hs__maj3_2
     ANTENNADIFFAREA 0.459200 ;
     PORT
       LAYER li1 ;
-        RECT 3.085 2.240 3.255 2.440 ;
+        RECT 3.085 2.240 3.255 2.400 ;
         RECT 3.085 2.070 3.550 2.240 ;
         RECT 3.380 1.310 3.550 2.070 ;
         RECT 3.380 1.040 3.620 1.310 ;
         RECT 3.380 0.550 3.550 1.040 ;
         RECT 3.000 0.380 3.550 0.550 ;
-        RECT 3.000 0.280 3.330 0.380 ;
     END
   END Y
   OBS
       LAYER li1 ;
-        RECT 0.170 2.020 0.350 2.460 ;
+        RECT 0.170 2.020 0.350 2.300 ;
         RECT 1.750 2.020 1.930 2.460 ;
         RECT 0.170 1.860 2.850 2.020 ;
         RECT 0.170 1.850 3.010 1.860 ;
@@ -954,9 +955,9 @@ MACRO sky130_as_sc_hs__maj3_2
         RECT 2.840 1.330 3.010 1.690 ;
         RECT 2.840 1.070 3.210 1.330 ;
         RECT 2.840 0.900 3.010 1.070 ;
-        RECT 0.175 0.730 3.010 0.900 ;
-        RECT 0.175 0.280 0.345 0.730 ;
-        RECT 1.755 0.280 1.925 0.730 ;
+        RECT 0.175 0.720 3.010 0.900 ;
+        RECT 0.175 0.450 0.345 0.720 ;
+        RECT 1.755 0.600 1.925 0.720 ;
   END
 END sky130_as_sc_hs__maj3_2
 
@@ -1010,8 +1011,8 @@ MACRO sky130_as_sc_hs__maj3_4
     SHAPE ABUTMENT ;
     PORT
       LAYER li1 ;
-        RECT 0.965 0.105 1.135 0.560 ;
-        RECT 2.600 0.105 2.770 0.560 ;
+        RECT 0.965 0.105 1.135 0.540 ;
+        RECT 2.600 0.105 2.770 0.540 ;
         RECT 3.720 0.105 3.890 0.890 ;
         RECT 4.640 0.105 4.810 0.930 ;
         RECT 0.000 -0.085 5.060 0.105 ;
@@ -1025,7 +1026,7 @@ MACRO sky130_as_sc_hs__maj3_4
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 0.760 1.070 1.340 1.330 ;
+        RECT 0.760 1.070 1.270 1.330 ;
     END
   END B
   PIN A
@@ -1047,7 +1048,7 @@ MACRO sky130_as_sc_hs__maj3_4
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 1.550 1.070 2.160 1.330 ;
+        RECT 1.550 1.070 2.110 1.330 ;
     END
   END C
   PIN Y
@@ -1056,15 +1057,14 @@ MACRO sky130_as_sc_hs__maj3_4
     ANTENNADIFFAREA 0.918400 ;
     PORT
       LAYER li1 ;
-        RECT 3.085 2.080 3.255 2.440 ;
+        RECT 3.085 2.080 3.255 2.280 ;
         RECT 3.085 1.910 3.550 2.080 ;
         RECT 3.380 1.300 3.550 1.910 ;
         RECT 4.155 1.300 4.325 2.450 ;
         RECT 3.380 1.090 4.325 1.300 ;
         RECT 3.380 0.550 3.550 1.090 ;
         RECT 3.000 0.380 3.550 0.550 ;
-        RECT 3.000 0.280 3.330 0.380 ;
-        RECT 4.155 0.280 4.325 1.090 ;
+        RECT 4.155 0.490 4.325 1.090 ;
     END
   END Y
   OBS
@@ -1072,19 +1072,2258 @@ MACRO sky130_as_sc_hs__maj3_4
         RECT 3.950 0.110 4.100 0.120 ;
         RECT 4.380 0.110 4.530 0.120 ;
       LAYER li1 ;
-        RECT 0.170 2.020 0.350 2.460 ;
+        RECT 0.170 2.020 0.350 2.180 ;
         RECT 1.750 2.020 1.930 2.460 ;
         RECT 0.170 1.850 2.850 2.020 ;
         RECT 2.680 1.750 2.850 1.850 ;
         RECT 2.680 1.500 3.010 1.750 ;
         RECT 2.840 1.330 3.010 1.500 ;
-        RECT 2.840 1.070 3.210 1.330 ;
-        RECT 2.840 0.900 3.010 1.070 ;
+        RECT 2.840 1.000 3.130 1.330 ;
+        RECT 2.840 0.900 3.010 1.000 ;
         RECT 0.175 0.730 3.010 0.900 ;
-        RECT 0.175 0.280 0.345 0.730 ;
-        RECT 1.755 0.280 1.925 0.730 ;
+        RECT 0.175 0.470 0.345 0.730 ;
+        RECT 1.755 0.600 1.925 0.730 ;
   END
 END sky130_as_sc_hs__maj3_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oai22_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oai22_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 0.615 2.140 0.785 2.630 ;
+        RECT 3.735 1.940 3.905 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 2.770 0.300 3.120 0.490 ;
+        RECT 3.640 0.300 3.995 0.490 ;
+        RECT 2.865 0.105 3.035 0.300 ;
+        RECT 3.735 0.105 3.905 0.300 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.310 1.360 0.650 1.530 ;
+        RECT 0.310 1.020 0.990 1.360 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.160 1.020 1.620 1.360 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.650 1.020 3.220 1.360 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.530 1.020 4.020 1.360 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.928300 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.475 1.770 1.645 2.120 ;
+        RECT 2.865 1.770 3.035 2.120 ;
+        RECT 1.390 1.600 3.120 1.770 ;
+        RECT 1.790 0.840 2.160 1.600 ;
+        RECT 0.520 0.670 2.160 0.840 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.180 1.870 0.360 2.460 ;
+        RECT 1.045 2.290 2.075 2.460 ;
+        RECT 1.045 1.870 1.215 2.290 ;
+        RECT 1.905 1.940 2.075 2.290 ;
+        RECT 2.425 2.290 3.475 2.460 ;
+        RECT 2.425 1.940 2.595 2.290 ;
+        RECT 0.180 1.700 1.215 1.870 ;
+        RECT 3.305 1.770 3.475 2.290 ;
+        RECT 4.165 1.770 4.335 2.460 ;
+        RECT 3.305 1.600 4.335 1.770 ;
+        RECT 0.175 0.450 0.345 0.840 ;
+        RECT 4.165 0.830 4.335 0.900 ;
+        RECT 2.410 0.660 4.335 0.830 ;
+        RECT 2.410 0.450 2.580 0.660 ;
+        RECT 0.175 0.280 2.580 0.450 ;
+        RECT 3.295 0.280 3.465 0.660 ;
+        RECT 4.165 0.290 4.335 0.660 ;
+  END
+END sky130_as_sc_hs__oai22_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oai21_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oai21_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.220 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 3.220 1.020 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.410 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.220 2.810 ;
+        RECT 0.175 1.880 0.345 2.630 ;
+        RECT 1.895 2.180 2.065 2.630 ;
+        RECT 2.755 2.180 2.925 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.220 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.280 0.860 0.450 ;
+        RECT 1.380 0.280 1.720 0.450 ;
+        RECT 0.605 0.105 0.775 0.280 ;
+        RECT 1.465 0.105 1.635 0.280 ;
+        RECT 0.000 -0.085 3.220 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.220 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.220 1.500 1.860 1.670 ;
+        RECT 0.220 0.990 0.470 1.500 ;
+        RECT 1.620 1.350 1.860 1.500 ;
+        RECT 1.620 0.990 1.890 1.350 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.830 1.010 1.410 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.100 1.350 2.330 1.670 ;
+        RECT 2.100 0.990 2.370 1.350 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.736400 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.325 2.010 2.495 2.460 ;
+        RECT 0.955 1.840 2.710 2.010 ;
+        RECT 2.540 1.740 2.710 1.840 ;
+        RECT 2.540 1.000 2.830 1.740 ;
+        RECT 2.540 0.810 2.710 1.000 ;
+        RECT 2.240 0.640 2.710 0.810 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.520 2.270 1.725 2.440 ;
+        RECT 0.175 0.650 2.065 0.820 ;
+        RECT 0.175 0.280 0.345 0.650 ;
+        RECT 1.035 0.280 1.205 0.650 ;
+        RECT 1.895 0.450 2.065 0.650 ;
+        RECT 1.895 0.280 3.010 0.450 ;
+  END
+END sky130_as_sc_hs__oai21_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oa22_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oa22_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.140 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.140 1.020 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.330 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.140 2.810 ;
+        RECT 0.175 2.140 0.345 2.630 ;
+        RECT 2.230 1.590 2.960 2.630 ;
+        RECT 3.645 1.610 3.815 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.140 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.290 0.860 0.460 ;
+        RECT 2.700 0.290 3.040 0.460 ;
+        RECT 0.605 0.105 0.775 0.290 ;
+        RECT 2.785 0.105 2.955 0.290 ;
+        RECT 3.645 0.105 3.815 0.830 ;
+        RECT 0.000 -0.085 4.140 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.140 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.190 1.330 0.440 1.970 ;
+        RECT 0.190 1.000 0.550 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.720 1.330 0.930 1.910 ;
+        RECT 0.720 1.000 1.030 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.200 1.330 1.450 1.880 ;
+        RECT 1.200 1.000 1.510 1.330 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.020 0.970 2.450 1.420 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.459200 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.215 1.470 3.385 2.460 ;
+        RECT 3.215 0.970 3.540 1.470 ;
+        RECT 3.215 0.280 3.385 0.970 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 1.035 2.220 1.205 2.460 ;
+        RECT 1.035 2.050 1.850 2.220 ;
+        RECT 1.680 0.830 1.850 2.050 ;
+        RECT 0.175 0.660 1.205 0.830 ;
+        RECT 0.175 0.280 0.345 0.660 ;
+        RECT 1.035 0.450 1.205 0.660 ;
+        RECT 1.430 0.800 1.850 0.830 ;
+        RECT 2.720 1.000 3.040 1.340 ;
+        RECT 2.720 0.800 2.890 1.000 ;
+        RECT 1.430 0.630 2.890 0.800 ;
+        RECT 1.035 0.280 2.475 0.450 ;
+  END
+END sky130_as_sc_hs__oa22_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oa22_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oa22_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 5.060 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.150 5.060 1.020 ;
+        RECT 0.000 0.140 4.140 0.150 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 5.250 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 5.060 2.810 ;
+        RECT 0.175 2.140 0.345 2.630 ;
+        RECT 2.230 1.590 2.960 2.630 ;
+        RECT 3.645 1.610 3.815 2.630 ;
+        RECT 4.505 1.460 4.675 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 5.060 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.290 0.860 0.460 ;
+        RECT 2.700 0.290 3.040 0.460 ;
+        RECT 0.605 0.105 0.775 0.290 ;
+        RECT 2.785 0.105 2.955 0.290 ;
+        RECT 3.645 0.105 3.815 0.830 ;
+        RECT 4.505 0.105 4.675 0.960 ;
+        RECT 0.000 -0.085 5.060 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 5.060 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.190 1.330 0.440 1.970 ;
+        RECT 0.190 1.000 0.550 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.720 1.330 0.930 1.910 ;
+        RECT 0.720 1.000 1.030 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.200 1.330 1.450 1.880 ;
+        RECT 1.200 1.000 1.510 1.330 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.020 0.970 2.450 1.420 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.918400 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.215 1.470 3.385 2.460 ;
+        RECT 3.215 1.350 3.540 1.470 ;
+        RECT 4.075 1.350 4.245 2.460 ;
+        RECT 3.215 1.050 4.245 1.350 ;
+        RECT 3.215 0.970 3.540 1.050 ;
+        RECT 3.215 0.280 3.385 0.970 ;
+        RECT 4.075 0.280 4.245 1.050 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 1.035 2.220 1.205 2.460 ;
+        RECT 1.035 2.050 1.850 2.220 ;
+        RECT 1.680 0.830 1.850 2.050 ;
+        RECT 0.175 0.660 1.205 0.830 ;
+        RECT 0.175 0.280 0.345 0.660 ;
+        RECT 1.035 0.450 1.205 0.660 ;
+        RECT 1.430 0.800 1.850 0.830 ;
+        RECT 2.720 1.000 3.040 1.340 ;
+        RECT 2.720 0.800 2.890 1.000 ;
+        RECT 1.430 0.630 2.890 0.800 ;
+        RECT 1.035 0.280 2.475 0.450 ;
+  END
+END sky130_as_sc_hs__oa22_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oa21_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oa21_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.680 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.110 3.680 1.020 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.870 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.680 2.810 ;
+        RECT 1.035 2.190 1.205 2.630 ;
+        RECT 2.225 1.550 2.395 2.630 ;
+        RECT 3.085 1.550 3.255 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.680 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.280 0.860 0.450 ;
+        RECT 0.605 0.105 0.775 0.280 ;
+        RECT 2.225 0.105 2.395 0.820 ;
+        RECT 3.085 0.105 3.255 0.900 ;
+        RECT 0.000 -0.085 3.680 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.260 0.990 0.550 1.380 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.760 0.990 1.050 1.680 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.240 0.990 1.510 1.670 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.459200 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.655 1.490 2.825 2.460 ;
+        RECT 2.620 0.950 2.920 1.490 ;
+        RECT 2.655 0.280 2.825 0.950 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.020 0.345 2.460 ;
+        RECT 1.680 2.020 1.850 2.460 ;
+        RECT 0.175 1.850 1.850 2.020 ;
+        RECT 0.175 1.550 0.345 1.850 ;
+        RECT 1.680 1.380 1.850 1.850 ;
+        RECT 1.680 0.990 2.450 1.380 ;
+        RECT 0.175 0.650 1.205 0.820 ;
+        RECT 0.175 0.280 0.345 0.650 ;
+        RECT 1.035 0.280 1.205 0.650 ;
+        RECT 1.680 0.280 1.850 0.990 ;
+  END
+END sky130_as_sc_hs__oa21_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__oa21_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__oa21_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.150 4.600 1.020 ;
+        RECT 0.000 0.110 3.680 0.150 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 1.035 2.190 1.205 2.630 ;
+        RECT 2.225 1.550 2.395 2.630 ;
+        RECT 3.085 1.550 3.255 2.630 ;
+        RECT 3.945 1.550 4.115 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.280 0.860 0.450 ;
+        RECT 0.605 0.105 0.775 0.280 ;
+        RECT 2.225 0.105 2.395 0.820 ;
+        RECT 3.085 0.105 3.255 0.900 ;
+        RECT 3.945 0.105 4.115 0.900 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.260 0.990 0.550 1.380 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.760 0.990 1.050 1.680 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.240 0.990 1.510 1.670 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.918400 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.655 1.490 2.825 2.460 ;
+        RECT 2.620 1.330 2.920 1.490 ;
+        RECT 3.515 1.330 3.685 2.460 ;
+        RECT 2.620 1.070 3.685 1.330 ;
+        RECT 2.620 0.950 2.920 1.070 ;
+        RECT 2.655 0.280 2.825 0.950 ;
+        RECT 3.515 0.280 3.685 1.070 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.020 0.345 2.460 ;
+        RECT 1.680 2.020 1.850 2.460 ;
+        RECT 0.175 1.850 1.850 2.020 ;
+        RECT 0.175 1.550 0.345 1.850 ;
+        RECT 1.680 1.380 1.850 1.850 ;
+        RECT 1.680 0.990 2.450 1.380 ;
+        RECT 0.175 0.650 1.205 0.820 ;
+        RECT 0.175 0.280 0.345 0.650 ;
+        RECT 1.035 0.280 1.205 0.650 ;
+        RECT 1.680 0.280 1.850 0.990 ;
+  END
+END sky130_as_sc_hs__oa21_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__aoi31_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__aoi31_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 0.605 2.190 0.775 2.630 ;
+        RECT 1.465 2.190 1.635 2.630 ;
+        RECT 2.885 2.190 3.055 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 0.300 0.860 0.470 ;
+        RECT 3.665 0.300 3.995 0.470 ;
+        RECT 0.605 0.105 0.775 0.300 ;
+        RECT 3.745 0.105 3.915 0.300 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.270 1.300 0.550 1.600 ;
+        RECT 0.270 0.980 0.980 1.300 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.200 1.330 1.480 1.600 ;
+        RECT 1.200 0.980 1.840 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.610 0.990 3.110 1.330 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.280 1.000 3.710 1.360 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.868700 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.745 1.700 3.915 2.120 ;
+        RECT 3.745 1.530 4.050 1.700 ;
+        RECT 3.880 1.370 4.050 1.530 ;
+        RECT 3.880 0.810 4.180 1.370 ;
+        RECT 3.315 0.640 4.345 0.810 ;
+        RECT 3.315 0.450 3.485 0.640 ;
+        RECT 2.330 0.280 3.485 0.450 ;
+        RECT 4.175 0.280 4.345 0.640 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.020 0.345 2.460 ;
+        RECT 1.035 2.020 1.205 2.460 ;
+        RECT 1.895 2.020 2.065 2.460 ;
+        RECT 2.455 2.020 2.625 2.460 ;
+        RECT 3.315 2.290 4.345 2.460 ;
+        RECT 3.315 2.020 3.485 2.290 ;
+        RECT 0.175 1.850 3.485 2.020 ;
+        RECT 0.175 1.770 0.345 1.850 ;
+        RECT 1.035 1.770 1.205 1.850 ;
+        RECT 1.895 1.770 2.065 1.850 ;
+        RECT 2.455 1.770 2.625 1.850 ;
+        RECT 3.315 1.770 3.485 1.850 ;
+        RECT 4.175 1.820 4.345 2.290 ;
+        RECT 0.175 0.640 1.205 0.810 ;
+        RECT 1.385 0.640 3.135 0.810 ;
+        RECT 0.175 0.280 0.345 0.640 ;
+        RECT 1.035 0.450 1.205 0.640 ;
+        RECT 1.035 0.280 2.160 0.450 ;
+  END
+END sky130_as_sc_hs__aoi31_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao31_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao31_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.680 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.150 3.680 1.020 ;
+        RECT 0.000 0.140 3.220 0.150 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.870 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.680 2.810 ;
+        RECT 1.155 2.440 1.325 2.630 ;
+        RECT 1.070 2.260 1.410 2.440 ;
+        RECT 2.085 1.510 2.255 2.630 ;
+        RECT 3.235 1.620 3.405 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.680 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.095 0.300 0.425 0.490 ;
+        RECT 2.025 0.300 2.365 0.470 ;
+        RECT 0.175 0.105 0.345 0.300 ;
+        RECT 2.105 0.105 2.275 0.300 ;
+        RECT 3.235 0.105 3.405 0.760 ;
+        RECT 0.000 -0.085 3.680 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.890 1.000 1.140 1.750 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.310 1.000 1.670 1.340 ;
+        RECT 1.310 0.620 1.510 1.000 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.880 1.000 2.150 1.340 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 1.340 0.710 1.750 ;
+        RECT 0.480 1.000 0.710 1.340 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.852800 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.800 1.490 2.970 2.460 ;
+        RECT 2.800 0.890 3.120 1.490 ;
+        RECT 2.800 0.280 2.970 0.890 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.135 1.490 0.345 2.450 ;
+        RECT 0.650 2.090 0.820 2.450 ;
+        RECT 1.635 2.090 1.815 2.450 ;
+        RECT 0.650 1.920 1.815 2.090 ;
+        RECT 0.135 0.830 0.305 1.490 ;
+        RECT 2.360 1.000 2.630 1.340 ;
+        RECT 0.135 0.660 0.775 0.830 ;
+        RECT 2.360 0.810 2.540 1.000 ;
+        RECT 0.605 0.450 0.775 0.660 ;
+        RECT 1.680 0.640 2.540 0.810 ;
+        RECT 1.680 0.450 1.850 0.640 ;
+        RECT 0.605 0.280 1.850 0.450 ;
+  END
+END sky130_as_sc_hs__ao31_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao31_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao31_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 1.155 2.440 1.325 2.630 ;
+        RECT 1.070 2.260 1.410 2.440 ;
+        RECT 2.085 1.510 2.255 2.630 ;
+        RECT 3.235 1.620 3.405 2.630 ;
+        RECT 4.095 1.450 4.265 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.095 0.300 0.425 0.490 ;
+        RECT 2.025 0.300 2.365 0.470 ;
+        RECT 0.175 0.105 0.345 0.300 ;
+        RECT 2.105 0.105 2.275 0.300 ;
+        RECT 3.235 0.105 3.405 0.760 ;
+        RECT 4.095 0.105 4.265 0.930 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.890 1.000 1.140 1.750 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.310 1.000 1.670 1.340 ;
+        RECT 1.310 0.620 1.510 1.000 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.880 1.000 2.150 1.340 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.520 1.340 0.710 1.750 ;
+        RECT 0.480 1.000 0.710 1.340 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.312000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.800 1.490 2.970 2.460 ;
+        RECT 2.800 1.300 3.120 1.490 ;
+        RECT 3.665 1.300 3.835 2.460 ;
+        RECT 2.800 1.080 3.835 1.300 ;
+        RECT 2.800 0.890 3.120 1.080 ;
+        RECT 2.800 0.280 2.970 0.890 ;
+        RECT 3.665 0.280 3.835 1.080 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.135 1.490 0.345 2.450 ;
+        RECT 0.650 2.090 0.820 2.450 ;
+        RECT 1.635 2.090 1.815 2.450 ;
+        RECT 0.650 1.920 1.815 2.090 ;
+        RECT 0.135 0.830 0.305 1.490 ;
+        RECT 2.360 1.000 2.630 1.340 ;
+        RECT 0.135 0.660 0.775 0.830 ;
+        RECT 2.360 0.810 2.540 1.000 ;
+        RECT 0.605 0.450 0.775 0.660 ;
+        RECT 1.680 0.640 2.540 0.810 ;
+        RECT 1.680 0.450 1.850 0.640 ;
+        RECT 0.605 0.280 1.850 0.450 ;
+  END
+END sky130_as_sc_hs__ao31_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao22_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao22_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.680 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.110 3.680 1.020 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.870 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.680 2.810 ;
+        RECT 0.605 2.440 0.775 2.630 ;
+        RECT 0.520 2.270 0.860 2.440 ;
+        RECT 2.475 1.510 2.645 2.630 ;
+        RECT 3.335 1.440 3.505 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.680 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.960 0.290 1.300 0.480 ;
+        RECT 1.045 0.105 1.215 0.290 ;
+        RECT 2.475 0.105 2.645 0.830 ;
+        RECT 3.335 0.105 3.505 0.930 ;
+        RECT 0.000 -0.085 3.680 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.210 1.340 0.430 1.760 ;
+        RECT 0.210 1.000 0.480 1.340 ;
+    END
+  END A
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.160 1.340 1.350 1.760 ;
+        RECT 1.160 1.190 1.460 1.340 ;
+        RECT 1.240 1.000 1.460 1.190 ;
+    END
+  END C
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.760 1.340 0.990 1.760 ;
+        RECT 0.760 1.000 0.980 1.340 ;
+    END
+  END B
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.640 1.000 1.940 1.340 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.459200 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.905 1.490 3.075 2.460 ;
+        RECT 2.820 0.920 3.110 1.490 ;
+        RECT 2.905 0.280 3.075 0.920 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.100 0.345 2.460 ;
+        RECT 1.045 2.290 2.125 2.460 ;
+        RECT 1.045 2.100 1.215 2.290 ;
+        RECT 1.955 2.130 2.125 2.290 ;
+        RECT 0.175 1.930 1.215 2.100 ;
+        RECT 1.520 1.830 1.690 2.120 ;
+        RECT 1.520 1.660 2.280 1.830 ;
+        RECT 2.110 1.340 2.280 1.660 ;
+        RECT 2.110 1.000 2.530 1.340 ;
+        RECT 2.110 0.830 2.280 1.000 ;
+        RECT 0.175 0.660 2.280 0.830 ;
+        RECT 0.175 0.280 0.345 0.660 ;
+        RECT 1.925 0.300 2.095 0.660 ;
+  END
+END sky130_as_sc_hs__ao22_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao22_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao22_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 0.605 2.440 0.775 2.630 ;
+        RECT 0.520 2.270 0.860 2.440 ;
+        RECT 2.475 1.510 2.645 2.630 ;
+        RECT 3.335 1.440 3.505 2.630 ;
+        RECT 4.205 1.440 4.375 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.960 0.290 1.300 0.480 ;
+        RECT 1.045 0.105 1.215 0.290 ;
+        RECT 2.475 0.105 2.645 0.830 ;
+        RECT 3.335 0.105 3.505 0.930 ;
+        RECT 4.205 0.105 4.375 0.930 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.210 1.340 0.430 1.760 ;
+        RECT 0.210 1.000 0.480 1.340 ;
+    END
+  END A
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.160 1.340 1.350 1.760 ;
+        RECT 1.160 1.190 1.460 1.340 ;
+        RECT 1.240 1.000 1.460 1.190 ;
+    END
+  END C
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.760 1.340 0.990 1.760 ;
+        RECT 0.760 1.000 0.980 1.340 ;
+    END
+  END B
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.640 1.000 1.940 1.340 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.918400 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.905 1.490 3.075 2.460 ;
+        RECT 2.820 1.270 3.110 1.490 ;
+        RECT 3.765 1.270 3.935 2.460 ;
+        RECT 2.820 1.100 3.935 1.270 ;
+        RECT 2.820 0.920 3.110 1.100 ;
+        RECT 2.905 0.280 3.075 0.920 ;
+        RECT 3.765 0.280 3.935 1.100 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.100 0.345 2.460 ;
+        RECT 1.045 2.290 2.125 2.460 ;
+        RECT 1.045 2.100 1.215 2.290 ;
+        RECT 1.955 2.130 2.125 2.290 ;
+        RECT 0.175 1.930 1.215 2.100 ;
+        RECT 1.520 1.830 1.690 2.120 ;
+        RECT 1.520 1.660 2.280 1.830 ;
+        RECT 2.110 1.340 2.280 1.660 ;
+        RECT 2.110 1.000 2.530 1.340 ;
+        RECT 2.110 0.830 2.280 1.000 ;
+        RECT 0.175 0.660 2.280 0.830 ;
+        RECT 0.175 0.280 0.345 0.660 ;
+        RECT 1.925 0.300 2.095 0.660 ;
+  END
+END sky130_as_sc_hs__ao22_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao21b_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao21b_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.130 -0.110 0.340 0.140 ;
+        RECT 1.380 0.110 3.680 0.140 ;
+        RECT 1.510 -0.100 1.830 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 0.170 1.500 0.775 2.630 ;
+        RECT 1.985 2.190 2.155 2.630 ;
+        RECT 3.365 1.860 3.535 2.630 ;
+        RECT 4.225 1.610 4.395 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.180 0.105 0.775 0.830 ;
+        RECT 2.330 0.280 2.670 0.490 ;
+        RECT 2.415 0.105 2.590 0.280 ;
+        RECT 3.365 0.105 3.535 0.550 ;
+        RECT 4.225 0.105 4.395 0.740 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.410 1.000 0.860 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.990 1.330 2.240 1.680 ;
+        RECT 1.990 1.000 2.380 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.620 1.000 2.890 1.330 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.459200 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.795 1.490 3.965 2.460 ;
+        RECT 3.795 0.860 4.100 1.490 ;
+        RECT 3.795 0.280 3.965 0.860 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 1.035 1.200 1.205 2.460 ;
+        RECT 1.555 2.020 1.725 2.460 ;
+        RECT 2.415 2.020 2.585 2.460 ;
+        RECT 1.555 1.850 2.585 2.020 ;
+        RECT 1.555 1.500 1.725 1.850 ;
+        RECT 2.415 1.500 2.585 1.850 ;
+        RECT 2.845 1.750 3.015 2.460 ;
+        RECT 2.845 1.580 3.230 1.750 ;
+        RECT 3.060 1.330 3.230 1.580 ;
+        RECT 1.570 1.200 1.820 1.330 ;
+        RECT 1.035 1.000 1.820 1.200 ;
+        RECT 3.060 1.000 3.620 1.330 ;
+        RECT 1.035 0.280 1.205 1.000 ;
+        RECT 3.060 0.830 3.230 1.000 ;
+        RECT 1.990 0.660 3.230 0.830 ;
+        RECT 1.555 0.445 1.725 0.605 ;
+        RECT 1.990 0.445 2.160 0.660 ;
+        RECT 1.555 0.275 2.160 0.445 ;
+        RECT 2.845 0.280 3.015 0.660 ;
+  END
+END sky130_as_sc_hs__ao21b_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao21b_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao21b_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 5.520 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.150 5.520 1.020 ;
+        RECT 0.000 0.140 4.600 0.150 ;
+        RECT 0.130 -0.110 0.340 0.140 ;
+        RECT 1.380 0.110 3.680 0.140 ;
+        RECT 1.510 -0.100 1.830 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 5.710 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 5.520 2.810 ;
+        RECT 0.170 1.500 0.775 2.630 ;
+        RECT 1.985 2.190 2.155 2.630 ;
+        RECT 3.365 1.860 3.535 2.630 ;
+        RECT 4.225 1.610 4.395 2.630 ;
+        RECT 5.085 1.440 5.255 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 5.520 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.180 0.105 0.775 0.830 ;
+        RECT 2.330 0.280 2.670 0.490 ;
+        RECT 2.415 0.105 2.590 0.280 ;
+        RECT 3.365 0.105 3.535 0.550 ;
+        RECT 4.225 0.105 4.395 0.740 ;
+        RECT 5.085 0.105 5.255 0.930 ;
+        RECT 0.000 -0.085 5.520 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 5.520 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.410 1.000 0.860 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.990 1.330 2.240 1.680 ;
+        RECT 1.990 1.000 2.380 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.620 1.000 2.890 1.330 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.918400 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.795 1.490 3.965 2.460 ;
+        RECT 3.795 1.300 4.100 1.490 ;
+        RECT 4.655 1.300 4.825 2.460 ;
+        RECT 3.795 1.040 4.825 1.300 ;
+        RECT 3.795 0.860 4.100 1.040 ;
+        RECT 3.795 0.280 3.965 0.860 ;
+        RECT 4.655 0.280 4.825 1.040 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 1.035 1.200 1.205 2.460 ;
+        RECT 1.555 2.020 1.725 2.460 ;
+        RECT 2.415 2.020 2.585 2.460 ;
+        RECT 1.555 1.850 2.585 2.020 ;
+        RECT 1.555 1.500 1.725 1.850 ;
+        RECT 2.415 1.500 2.585 1.850 ;
+        RECT 2.845 1.750 3.015 2.460 ;
+        RECT 2.845 1.580 3.230 1.750 ;
+        RECT 3.060 1.330 3.230 1.580 ;
+        RECT 1.570 1.200 1.820 1.330 ;
+        RECT 1.035 1.000 1.820 1.200 ;
+        RECT 3.060 1.000 3.620 1.330 ;
+        RECT 1.035 0.280 1.205 1.000 ;
+        RECT 3.060 0.830 3.230 1.000 ;
+        RECT 1.990 0.660 3.230 0.830 ;
+        RECT 1.555 0.445 1.725 0.605 ;
+        RECT 1.990 0.445 2.160 0.660 ;
+        RECT 1.555 0.275 2.160 0.445 ;
+        RECT 2.845 0.280 3.015 0.660 ;
+  END
+END sky130_as_sc_hs__ao21b_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__aoi21_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__aoi21_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.220 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 3.220 1.020 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.410 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.220 2.810 ;
+        RECT 0.605 2.100 0.775 2.630 ;
+        RECT 1.465 2.100 1.635 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.220 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.175 0.105 0.345 0.830 ;
+        RECT 1.810 0.280 2.150 0.490 ;
+        RECT 1.895 0.105 2.065 0.280 ;
+        RECT 2.765 0.105 2.935 0.820 ;
+        RECT 0.000 -0.085 3.220 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.220 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.380 1.420 1.790 1.590 ;
+        RECT 0.380 1.330 0.550 1.420 ;
+        RECT 0.300 1.000 0.550 1.330 ;
+        RECT 1.620 1.330 1.790 1.420 ;
+        RECT 1.620 1.000 1.890 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.830 1.000 1.410 1.250 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.670 0.990 2.920 1.590 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.641200 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.325 1.580 2.495 2.120 ;
+        RECT 2.260 0.830 2.495 1.580 ;
+        RECT 1.035 0.660 2.495 0.830 ;
+        RECT 1.035 0.280 1.205 0.660 ;
+        RECT 2.325 0.280 2.495 0.660 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 1.930 0.345 2.460 ;
+        RECT 1.035 1.930 1.205 2.460 ;
+        RECT 1.895 2.290 2.925 2.460 ;
+        RECT 1.895 1.930 2.065 2.290 ;
+        RECT 0.175 1.760 2.065 1.930 ;
+        RECT 2.755 1.760 2.925 2.290 ;
+  END
+END sky130_as_sc_hs__aoi21_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao21_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao21_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.220 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 3.220 1.020 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 3.410 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 3.220 2.810 ;
+        RECT 0.605 2.190 0.775 2.630 ;
+        RECT 1.985 1.860 2.155 2.630 ;
+        RECT 2.845 1.610 3.015 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 3.220 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.950 0.280 1.290 0.490 ;
+        RECT 1.035 0.105 1.210 0.280 ;
+        RECT 1.985 0.105 2.155 0.550 ;
+        RECT 2.845 0.105 3.015 0.740 ;
+        RECT 0.000 -0.085 3.220 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.220 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.200 0.775 0.440 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.610 1.330 0.860 1.680 ;
+        RECT 0.610 1.000 1.000 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.240 1.000 1.510 1.330 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.459200 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.415 1.490 2.585 2.460 ;
+        RECT 2.415 0.860 2.720 1.490 ;
+        RECT 2.415 0.280 2.585 0.860 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.020 0.345 2.460 ;
+        RECT 1.035 2.020 1.205 2.460 ;
+        RECT 0.175 1.850 1.205 2.020 ;
+        RECT 0.175 1.500 0.345 1.850 ;
+        RECT 1.035 1.500 1.205 1.850 ;
+        RECT 1.465 1.750 1.635 2.460 ;
+        RECT 1.465 1.580 1.850 1.750 ;
+        RECT 1.680 1.330 1.850 1.580 ;
+        RECT 1.680 1.000 2.240 1.330 ;
+        RECT 1.680 0.830 1.850 1.000 ;
+        RECT 0.610 0.660 1.850 0.830 ;
+        RECT 0.175 0.445 0.345 0.605 ;
+        RECT 0.610 0.445 0.780 0.660 ;
+        RECT 0.175 0.275 0.780 0.445 ;
+        RECT 1.465 0.280 1.635 0.660 ;
+  END
+END sky130_as_sc_hs__ao21_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__ao21_4
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__ao21_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.140 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.140 1.020 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.330 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.140 2.810 ;
+        RECT 0.605 2.190 0.775 2.630 ;
+        RECT 1.985 1.860 2.155 2.630 ;
+        RECT 2.845 1.610 3.015 2.630 ;
+        RECT 3.705 1.470 3.875 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.140 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.950 0.280 1.290 0.490 ;
+        RECT 1.035 0.105 1.210 0.280 ;
+        RECT 1.985 0.105 2.155 0.550 ;
+        RECT 2.845 0.105 3.015 0.740 ;
+        RECT 3.705 0.105 3.875 0.900 ;
+        RECT 0.000 -0.085 4.140 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.140 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.200 0.775 0.440 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.610 1.330 0.860 1.680 ;
+        RECT 0.610 1.000 1.000 1.330 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.240 1.000 1.510 1.330 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.918400 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.415 1.490 2.585 2.460 ;
+        RECT 2.415 1.310 2.720 1.490 ;
+        RECT 3.275 1.310 3.445 2.460 ;
+        RECT 2.415 1.090 3.445 1.310 ;
+        RECT 2.415 0.860 2.720 1.090 ;
+        RECT 2.415 0.280 2.585 0.860 ;
+        RECT 3.275 0.290 3.445 1.090 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 2.020 0.345 2.460 ;
+        RECT 1.035 2.020 1.205 2.460 ;
+        RECT 0.175 1.850 1.205 2.020 ;
+        RECT 0.175 1.500 0.345 1.850 ;
+        RECT 1.035 1.500 1.205 1.850 ;
+        RECT 1.465 1.750 1.635 2.460 ;
+        RECT 1.465 1.580 1.850 1.750 ;
+        RECT 1.680 1.330 1.850 1.580 ;
+        RECT 1.680 1.000 2.240 1.330 ;
+        RECT 1.680 0.830 1.850 1.000 ;
+        RECT 0.610 0.660 1.850 0.830 ;
+        RECT 0.175 0.445 0.345 0.605 ;
+        RECT 0.610 0.445 0.780 0.660 ;
+        RECT 0.175 0.275 0.780 0.445 ;
+        RECT 1.465 0.280 1.635 0.660 ;
+  END
+END sky130_as_sc_hs__ao21_4
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__aoi22_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__aoi22_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.600 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.140 4.600 1.020 ;
+        RECT 0.000 0.110 3.680 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.790 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.600 2.810 ;
+        RECT 2.855 1.890 3.025 2.630 ;
+        RECT 3.715 1.890 3.885 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.600 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.525 0.280 0.855 0.450 ;
+        RECT 3.630 0.280 3.970 0.450 ;
+        RECT 0.605 0.105 0.775 0.280 ;
+        RECT 3.715 0.105 3.885 0.280 ;
+        RECT 0.000 -0.085 4.600 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.180 1.040 0.740 1.300 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.380 1.310 1.690 1.660 ;
+        RECT 1.260 1.060 1.780 1.310 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.360 1.060 3.170 1.310 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.610 1.040 4.300 1.300 ;
+    END
+  END D
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.165900 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.175 1.720 0.345 2.460 ;
+        RECT 1.035 1.830 2.065 2.020 ;
+        RECT 1.035 1.720 1.205 1.830 ;
+        RECT 0.175 1.550 1.205 1.720 ;
+        RECT 1.895 1.720 2.065 1.830 ;
+        RECT 1.895 1.550 2.190 1.720 ;
+        RECT 1.950 0.890 2.190 1.550 ;
+        RECT 1.380 0.680 3.110 0.890 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.605 2.290 2.595 2.460 ;
+        RECT 0.605 1.890 0.775 2.290 ;
+        RECT 1.465 2.190 1.635 2.290 ;
+        RECT 2.425 1.720 2.595 2.290 ;
+        RECT 3.285 1.720 3.455 2.460 ;
+        RECT 4.145 1.720 4.315 2.460 ;
+        RECT 2.425 1.550 4.315 1.720 ;
+        RECT 0.175 0.620 1.205 0.800 ;
+        RECT 0.175 0.280 0.345 0.620 ;
+        RECT 1.035 0.450 1.205 0.620 ;
+        RECT 3.285 0.700 4.315 0.870 ;
+        RECT 1.810 0.450 2.150 0.470 ;
+        RECT 1.035 0.280 2.150 0.450 ;
+        RECT 2.340 0.450 2.680 0.470 ;
+        RECT 3.285 0.450 3.455 0.700 ;
+        RECT 4.145 0.540 4.315 0.700 ;
+        RECT 2.340 0.280 3.455 0.450 ;
+  END
+END sky130_as_sc_hs__aoi22_2
+
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_as_sc_hs__aoi21b_2
+  CLASS CORE ;
+  FOREIGN sky130_as_sc_hs__aoi21b_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.140 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VNB
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 0.150 4.140 1.020 ;
+        RECT 0.000 0.140 3.220 0.150 ;
+        RECT 0.000 0.110 2.300 0.140 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
+    END
+  END VNB
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.310 4.330 2.910 ;
+    END
+  END VPB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.630 4.140 2.810 ;
+        RECT 0.605 2.100 0.775 2.630 ;
+        RECT 1.465 2.100 1.635 2.630 ;
+        RECT 3.730 1.500 3.900 2.630 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 4.140 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.175 0.105 0.345 0.830 ;
+        RECT 1.810 0.280 2.150 0.490 ;
+        RECT 1.895 0.105 2.065 0.280 ;
+        RECT 2.750 0.105 2.950 0.820 ;
+        RECT 3.740 0.105 3.910 0.820 ;
+        RECT 0.000 -0.085 4.140 0.105 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 4.140 0.240 ;
+    END
+  END VGND
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.380 1.420 1.790 1.590 ;
+        RECT 0.380 1.330 0.550 1.420 ;
+        RECT 0.300 1.000 0.550 1.330 ;
+        RECT 1.620 1.330 1.790 1.420 ;
+        RECT 1.620 1.000 1.890 1.330 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.830 1.000 1.410 1.250 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246000 ;
+    PORT
+      LAYER li1 ;
+        RECT 3.620 0.990 3.830 1.330 ;
+    END
+  END C
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.641200 ;
+    PORT
+      LAYER li1 ;
+        RECT 2.325 1.580 2.495 2.120 ;
+        RECT 2.260 0.830 2.495 1.580 ;
+        RECT 1.035 0.660 2.495 0.830 ;
+        RECT 1.035 0.280 1.205 0.660 ;
+        RECT 2.325 0.280 2.495 0.660 ;
+    END
+  END Y
+  OBS
+      LAYER li1 ;
+        RECT 0.175 1.930 0.345 2.460 ;
+        RECT 1.035 1.930 1.205 2.460 ;
+        RECT 1.895 2.290 2.925 2.460 ;
+        RECT 1.895 1.930 2.065 2.290 ;
+        RECT 0.175 1.760 2.065 1.930 ;
+        RECT 2.755 1.500 2.925 2.290 ;
+        RECT 3.275 1.330 3.445 2.450 ;
+        RECT 2.670 0.990 3.445 1.330 ;
+        RECT 3.275 0.280 3.445 0.990 ;
+  END
+END sky130_as_sc_hs__aoi21b_2
 
 VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
@@ -3395,7 +5634,7 @@ MACRO sky130_as_sc_hs__mux2_2
       LAYER li1 ;
         RECT 0.000 2.630 4.140 2.810 ;
         RECT 0.605 2.180 0.775 2.630 ;
-        RECT 2.870 1.940 3.130 2.630 ;
+        RECT 2.870 2.190 3.090 2.630 ;
         RECT 3.795 1.860 3.965 2.630 ;
       LAYER met1 ;
         RECT 0.000 2.480 4.140 2.960 ;
@@ -3440,9 +5679,9 @@ MACRO sky130_as_sc_hs__mux2_2
     ANTENNADIFFAREA 0.401800 ;
     PORT
       LAYER li1 ;
-        RECT 3.365 1.690 3.535 2.430 ;
-        RECT 3.365 1.120 3.740 1.690 ;
-        RECT 3.365 0.280 3.535 1.120 ;
+        RECT 3.350 1.690 3.535 2.430 ;
+        RECT 3.350 1.120 3.660 1.690 ;
+        RECT 3.350 0.510 3.535 1.120 ;
     END
   END Y
   PIN S
@@ -3453,34 +5692,34 @@ MACRO sky130_as_sc_hs__mux2_2
       LAYER li1 ;
         RECT 2.080 1.750 2.350 1.810 ;
         RECT 1.720 1.480 2.350 1.750 ;
-        RECT 0.450 1.130 0.680 1.140 ;
-        RECT 0.450 1.120 1.490 1.130 ;
+        RECT 0.450 1.080 0.680 1.140 ;
+        RECT 1.240 1.120 1.490 1.130 ;
         RECT 1.720 1.120 1.920 1.480 ;
-        RECT 0.450 0.900 1.920 1.120 ;
+        RECT 1.240 1.080 1.920 1.120 ;
+        RECT 0.450 0.900 1.920 1.080 ;
         RECT 0.450 0.810 1.490 0.900 ;
         RECT 1.240 0.800 1.490 0.810 ;
     END
   END S
   OBS
       LAYER li1 ;
-        RECT 0.110 2.010 0.345 2.440 ;
-        RECT 1.570 2.150 1.990 2.380 ;
+        RECT 0.110 2.010 0.345 2.300 ;
+        RECT 1.840 2.150 2.010 2.310 ;
         RECT 0.110 1.840 1.370 2.010 ;
-        RECT 1.570 1.980 2.700 2.150 ;
+        RECT 1.840 1.980 2.700 2.150 ;
         RECT 0.110 0.660 0.280 1.840 ;
         RECT 1.200 1.720 1.370 1.840 ;
         RECT 2.530 1.730 2.700 1.980 ;
         RECT 1.200 1.390 1.460 1.720 ;
         RECT 2.530 1.560 3.150 1.730 ;
         RECT 2.860 1.540 3.150 1.560 ;
-        RECT 2.860 1.210 3.195 1.540 ;
+        RECT 2.860 1.210 3.160 1.540 ;
         RECT 2.860 0.880 3.030 1.210 ;
         RECT 2.580 0.710 3.030 0.880 ;
         RECT 0.110 0.500 0.345 0.660 ;
         RECT 2.580 0.620 2.750 0.710 ;
-        RECT 0.175 0.290 0.345 0.500 ;
-        RECT 1.480 0.450 2.750 0.620 ;
-        RECT 1.480 0.290 1.920 0.450 ;
+        RECT 0.175 0.320 0.345 0.500 ;
+        RECT 1.600 0.450 2.750 0.620 ;
   END
 END sky130_as_sc_hs__mux2_2
 
@@ -3526,7 +5765,7 @@ MACRO sky130_as_sc_hs__mux2_4
       LAYER li1 ;
         RECT 0.000 2.630 5.060 2.810 ;
         RECT 0.605 2.180 0.775 2.630 ;
-        RECT 2.870 1.940 3.130 2.630 ;
+        RECT 2.870 2.120 3.130 2.630 ;
         RECT 3.815 1.860 3.985 2.630 ;
         RECT 4.675 1.690 4.845 2.630 ;
       LAYER met1 ;
@@ -3573,11 +5812,11 @@ MACRO sky130_as_sc_hs__mux2_4
     ANTENNADIFFAREA 0.803600 ;
     PORT
       LAYER li1 ;
-        RECT 3.385 1.690 3.555 2.430 ;
-        RECT 4.245 1.690 4.415 2.460 ;
-        RECT 3.385 1.240 4.415 1.690 ;
-        RECT 3.385 0.280 3.555 1.240 ;
-        RECT 4.245 0.290 4.415 1.240 ;
+        RECT 3.385 1.660 3.555 2.430 ;
+        RECT 4.245 1.660 4.415 2.460 ;
+        RECT 3.385 1.270 4.415 1.660 ;
+        RECT 3.385 0.510 3.555 1.270 ;
+        RECT 4.245 0.540 4.415 1.270 ;
     END
   END Y
   PIN S
@@ -3599,9 +5838,9 @@ MACRO sky130_as_sc_hs__mux2_4
   OBS
       LAYER li1 ;
         RECT 0.110 2.010 0.345 2.440 ;
-        RECT 1.570 2.150 1.990 2.380 ;
+        RECT 1.850 2.150 2.020 2.310 ;
         RECT 0.110 1.840 1.370 2.010 ;
-        RECT 1.570 1.980 2.700 2.150 ;
+        RECT 1.850 1.980 2.700 2.150 ;
         RECT 0.110 0.660 0.280 1.840 ;
         RECT 1.200 1.720 1.370 1.840 ;
         RECT 2.530 1.730 2.700 1.980 ;
@@ -3614,8 +5853,7 @@ MACRO sky130_as_sc_hs__mux2_4
         RECT 0.110 0.500 0.345 0.660 ;
         RECT 2.610 0.620 2.780 0.710 ;
         RECT 0.175 0.290 0.345 0.500 ;
-        RECT 1.480 0.450 2.780 0.620 ;
-        RECT 1.480 0.290 1.920 0.450 ;
+        RECT 1.560 0.450 2.780 0.620 ;
   END
 END sky130_as_sc_hs__mux2_4
 
@@ -3789,22 +6027,22 @@ MACRO sky130_as_sc_hs__and2_2
     ANTENNAGATEAREA 0.238500 ;
     PORT
       LAYER li1 ;
-        RECT 0.880 1.070 1.105 1.410 ;
+        RECT 0.890 1.070 1.110 1.410 ;
     END
   END B
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.461100 ;
+    ANTENNADIFFAREA 0.445200 ;
     PORT
       LAYER li1 ;
-        RECT 1.515 2.080 1.685 2.450 ;
-        RECT 1.515 1.950 2.000 2.080 ;
-        RECT 1.560 1.910 2.000 1.950 ;
-        RECT 1.700 0.910 2.000 1.910 ;
-        RECT 1.515 0.770 2.000 0.910 ;
+        RECT 1.515 2.080 1.700 2.280 ;
+        RECT 1.515 1.950 1.960 2.080 ;
+        RECT 1.560 1.910 1.960 1.950 ;
+        RECT 1.710 0.910 1.960 1.910 ;
+        RECT 1.515 0.770 1.960 0.910 ;
         RECT 1.515 0.740 1.870 0.770 ;
-        RECT 1.515 0.280 1.685 0.740 ;
+        RECT 1.515 0.580 1.695 0.740 ;
     END
   END Y
   PIN A
@@ -3813,18 +6051,18 @@ MACRO sky130_as_sc_hs__and2_2
     ANTENNAGATEAREA 0.238500 ;
     PORT
       LAYER li1 ;
-        RECT 0.150 1.080 0.370 1.430 ;
+        RECT 0.150 1.080 0.380 1.430 ;
     END
   END A
   OBS
       LAYER li1 ;
         RECT 0.605 1.810 0.775 2.460 ;
-        RECT 0.540 1.780 0.775 1.810 ;
-        RECT 0.540 1.600 1.445 1.780 ;
-        RECT 0.540 0.910 0.710 1.600 ;
-        RECT 1.275 1.440 1.445 1.600 ;
-        RECT 1.275 1.080 1.530 1.440 ;
-        RECT 0.170 0.740 0.710 0.910 ;
+        RECT 0.550 1.780 0.775 1.810 ;
+        RECT 0.550 1.600 1.450 1.780 ;
+        RECT 0.550 0.910 0.720 1.600 ;
+        RECT 1.280 1.440 1.450 1.600 ;
+        RECT 1.280 1.080 1.540 1.440 ;
+        RECT 0.170 0.740 0.720 0.910 ;
         RECT 0.175 0.280 0.345 0.740 ;
   END
 END sky130_as_sc_hs__and2_2
@@ -3847,8 +6085,10 @@ MACRO sky130_as_sc_hs__and2_4
       LAYER pwell ;
         RECT 0.050 0.240 3.220 1.020 ;
         RECT 0.130 0.220 1.600 0.240 ;
-        RECT 0.130 -0.100 0.450 0.220 ;
-        RECT 2.170 0.130 3.220 0.240 ;
+        RECT 0.130 0.130 0.450 0.220 ;
+        RECT 1.860 0.150 3.220 0.240 ;
+        RECT 0.130 0.110 0.550 0.130 ;
+        RECT 0.130 -0.100 0.450 0.110 ;
     END
   END VNB
   PIN VPB
@@ -3866,10 +6106,10 @@ MACRO sky130_as_sc_hs__and2_4
     PORT
       LAYER li1 ;
         RECT 0.000 2.630 3.220 2.810 ;
-        RECT 0.160 1.600 0.360 2.630 ;
-        RECT 1.020 1.950 1.220 2.630 ;
+        RECT 0.175 1.600 0.345 2.630 ;
+        RECT 1.035 1.950 1.205 2.630 ;
         RECT 1.870 2.250 2.210 2.630 ;
-        RECT 2.790 1.620 2.990 2.630 ;
+        RECT 2.815 1.570 2.985 2.630 ;
       LAYER met1 ;
         RECT 0.000 2.480 3.220 2.960 ;
     END
@@ -3880,63 +6120,61 @@ MACRO sky130_as_sc_hs__and2_4
     SHAPE ABUTMENT ;
     PORT
       LAYER li1 ;
-        RECT 1.020 0.105 1.220 0.880 ;
-        RECT 1.950 0.105 2.150 0.590 ;
-        RECT 2.790 0.105 2.990 0.940 ;
+        RECT 1.035 0.105 1.205 0.880 ;
+        RECT 1.955 0.105 2.125 0.590 ;
+        RECT 2.815 0.105 2.985 0.920 ;
         RECT 0.000 -0.085 3.220 0.105 ;
       LAYER met1 ;
         RECT 0.000 -0.240 3.220 0.240 ;
     END
   END VGND
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    ANTENNAGATEAREA 0.238500 ;
-    PORT
-      LAYER li1 ;
-        RECT 0.150 1.080 0.370 1.430 ;
-    END
-  END A
   PIN B
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.238500 ;
     PORT
       LAYER li1 ;
-        RECT 0.880 1.070 1.105 1.410 ;
+        RECT 0.890 1.070 1.110 1.410 ;
     END
   END B
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.906300 ;
+    ANTENNADIFFAREA 0.890400 ;
     PORT
       LAYER li1 ;
-        RECT 1.510 2.080 1.690 2.450 ;
-        RECT 1.510 1.950 2.000 2.080 ;
+        RECT 1.515 2.080 1.700 2.450 ;
+        RECT 1.515 1.950 2.000 2.080 ;
         RECT 1.560 1.910 2.000 1.950 ;
-        RECT 1.700 1.370 2.000 1.910 ;
-        RECT 2.380 1.370 2.580 2.460 ;
-        RECT 1.700 1.170 2.580 1.370 ;
-        RECT 1.700 0.910 2.000 1.170 ;
-        RECT 1.490 0.770 2.000 0.910 ;
-        RECT 1.490 0.740 1.870 0.770 ;
-        RECT 1.490 0.280 1.690 0.740 ;
-        RECT 2.380 0.280 2.580 1.170 ;
+        RECT 1.710 1.460 2.000 1.910 ;
+        RECT 2.385 1.460 2.555 2.450 ;
+        RECT 1.710 1.100 2.555 1.460 ;
+        RECT 1.710 0.910 2.000 1.100 ;
+        RECT 1.515 0.770 2.000 0.910 ;
+        RECT 1.515 0.740 1.870 0.770 ;
+        RECT 1.515 0.280 1.695 0.740 ;
+        RECT 2.385 0.280 2.555 1.100 ;
     END
   END Y
-  OBS
-      LAYER pwell ;
-        RECT 2.610 0.110 2.760 0.120 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.238500 ;
+    PORT
       LAYER li1 ;
-        RECT 0.590 1.810 0.790 2.460 ;
-        RECT 0.540 1.780 0.790 1.810 ;
-        RECT 0.540 1.600 1.445 1.780 ;
-        RECT 0.540 0.910 0.710 1.600 ;
-        RECT 1.275 1.440 1.445 1.600 ;
-        RECT 1.275 1.080 1.530 1.440 ;
-        RECT 0.160 0.740 0.710 0.910 ;
-        RECT 0.160 0.280 0.360 0.740 ;
+        RECT 0.150 1.080 0.380 1.430 ;
+    END
+  END A
+  OBS
+      LAYER li1 ;
+        RECT 0.605 1.810 0.775 2.460 ;
+        RECT 0.550 1.780 0.775 1.810 ;
+        RECT 0.550 1.600 1.450 1.780 ;
+        RECT 0.550 0.910 0.720 1.600 ;
+        RECT 1.280 1.440 1.450 1.600 ;
+        RECT 1.280 1.080 1.540 1.440 ;
+        RECT 0.170 0.740 0.720 0.910 ;
+        RECT 0.175 0.280 0.345 0.740 ;
   END
 END sky130_as_sc_hs__and2_4
 
@@ -4000,7 +6238,7 @@ MACRO sky130_as_sc_hs__nand3_2
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
         RECT 0.310 1.050 0.980 1.340 ;
@@ -4009,7 +6247,7 @@ MACRO sky130_as_sc_hs__nand3_2
   PIN B
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
         RECT 1.190 1.060 1.610 1.340 ;
@@ -4018,7 +6256,7 @@ MACRO sky130_as_sc_hs__nand3_2
   PIN C
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.489000 ;
     PORT
       LAYER li1 ;
         RECT 2.280 1.340 2.470 1.670 ;
@@ -4028,7 +6266,7 @@ MACRO sky130_as_sc_hs__nand3_2
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.009400 ;
+    ANTENNADIFFAREA 1.008000 ;
     PORT
       LAYER li1 ;
         RECT 0.580 1.750 0.800 2.410 ;
@@ -4085,7 +6323,7 @@ MACRO sky130_as_sc_hs__nor3_2
     PORT
       LAYER li1 ;
         RECT 0.000 2.630 3.680 2.810 ;
-        RECT 0.570 1.870 0.810 2.630 ;
+        RECT 0.570 2.060 0.810 2.630 ;
       LAYER met1 ;
         RECT 0.000 2.480 3.680 2.960 ;
     END
@@ -4096,7 +6334,7 @@ MACRO sky130_as_sc_hs__nor3_2
     SHAPE ABUTMENT ;
     PORT
       LAYER li1 ;
-        RECT 0.175 0.105 0.345 0.850 ;
+        RECT 0.175 0.105 0.345 0.920 ;
         RECT 1.035 0.105 1.205 0.540 ;
         RECT 1.900 0.105 2.650 0.540 ;
         RECT 3.325 0.105 3.495 0.910 ;
@@ -4119,7 +6357,7 @@ MACRO sky130_as_sc_hs__nor3_2
     ANTENNAGATEAREA 0.490500 ;
     PORT
       LAYER li1 ;
-        RECT 0.310 1.060 0.980 1.340 ;
+        RECT 0.310 1.090 0.930 1.340 ;
     END
   END A
   PIN B
@@ -4128,7 +6366,7 @@ MACRO sky130_as_sc_hs__nor3_2
     ANTENNAGATEAREA 0.490500 ;
     PORT
       LAYER li1 ;
-        RECT 1.190 1.060 1.870 1.340 ;
+        RECT 1.240 1.060 1.870 1.340 ;
     END
   END B
   PIN C
@@ -4147,29 +6385,27 @@ MACRO sky130_as_sc_hs__nor3_2
     ANTENNADIFFAREA 0.821800 ;
     PORT
       LAYER li1 ;
-        RECT 2.870 1.460 3.080 2.110 ;
+        RECT 2.870 1.460 3.080 1.790 ;
         RECT 2.870 0.880 3.100 1.460 ;
         RECT 0.605 0.870 3.100 0.880 ;
         RECT 0.605 0.710 3.065 0.870 ;
-        RECT 0.605 0.280 0.775 0.710 ;
-        RECT 1.465 0.280 1.635 0.710 ;
-        RECT 2.895 0.280 3.065 0.710 ;
+        RECT 0.605 0.460 0.775 0.710 ;
+        RECT 1.465 0.410 1.635 0.710 ;
+        RECT 2.895 0.510 3.065 0.710 ;
     END
   END Y
   OBS
       LAYER li1 ;
-        RECT 0.160 1.700 0.360 2.450 ;
+        RECT 0.160 1.890 0.360 2.450 ;
         RECT 1.020 2.280 2.080 2.450 ;
-        RECT 1.020 1.700 1.220 2.280 ;
+        RECT 1.020 1.890 1.215 2.280 ;
         RECT 1.880 2.120 2.080 2.280 ;
-        RECT 2.450 2.280 3.520 2.450 ;
-        RECT 0.160 1.530 1.220 1.700 ;
-        RECT 1.450 1.950 1.650 2.110 ;
-        RECT 2.450 1.950 2.650 2.280 ;
-        RECT 1.450 1.780 2.650 1.950 ;
-        RECT 1.450 1.510 1.650 1.780 ;
+        RECT 2.450 2.020 3.520 2.210 ;
+        RECT 2.450 1.950 2.650 2.020 ;
+        RECT 0.160 1.720 1.215 1.890 ;
+        RECT 1.385 1.780 2.650 1.950 ;
         RECT 2.450 1.510 2.650 1.780 ;
-        RECT 3.320 1.490 3.520 2.280 ;
+        RECT 3.320 1.490 3.520 2.020 ;
   END
 END sky130_as_sc_hs__nor3_2
 
@@ -4190,9 +6426,7 @@ MACRO sky130_as_sc_hs__nand4_2
     PORT
       LAYER pwell ;
         RECT 0.000 0.130 4.600 1.020 ;
-        RECT 0.000 0.120 3.680 0.130 ;
-        RECT 0.000 0.110 3.700 0.120 ;
-        RECT 0.000 0.100 3.680 0.110 ;
+        RECT 0.000 0.100 3.680 0.130 ;
         RECT 0.130 -0.100 0.450 0.100 ;
         RECT 2.430 -0.075 2.680 0.100 ;
         RECT 2.430 -0.100 2.630 -0.075 ;
@@ -4237,7 +6471,7 @@ MACRO sky130_as_sc_hs__nand4_2
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.489000 ;
     PORT
       LAYER li1 ;
         RECT 0.310 1.050 0.980 1.340 ;
@@ -4246,7 +6480,7 @@ MACRO sky130_as_sc_hs__nand4_2
   PIN B
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.489000 ;
     PORT
       LAYER li1 ;
         RECT 1.190 1.060 1.810 1.290 ;
@@ -4255,7 +6489,7 @@ MACRO sky130_as_sc_hs__nand4_2
   PIN C
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.489000 ;
     PORT
       LAYER li1 ;
         RECT 2.280 1.280 2.480 1.670 ;
@@ -4265,19 +6499,18 @@ MACRO sky130_as_sc_hs__nand4_2
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.285200 ;
+    ANTENNADIFFAREA 1.283800 ;
     PORT
       LAYER li1 ;
         RECT 0.580 1.750 0.800 2.410 ;
         RECT 1.430 2.010 1.670 2.430 ;
-        RECT 2.860 2.010 3.100 2.430 ;
+        RECT 2.860 2.010 3.100 2.110 ;
         RECT 1.430 2.000 3.100 2.010 ;
-        RECT 3.740 2.000 3.940 2.450 ;
+        RECT 3.740 2.000 3.940 2.280 ;
         RECT 1.430 1.840 3.940 2.000 ;
         RECT 1.430 1.750 1.670 1.840 ;
-        RECT 0.580 1.580 1.670 1.750 ;
         RECT 2.860 1.830 3.940 1.840 ;
-        RECT 2.860 1.730 3.100 1.830 ;
+        RECT 0.580 1.580 1.670 1.750 ;
         RECT 3.740 1.760 3.940 1.830 ;
         RECT 3.740 1.580 4.230 1.760 ;
         RECT 3.980 0.880 4.230 1.580 ;
@@ -4287,7 +6520,7 @@ MACRO sky130_as_sc_hs__nand4_2
   PIN D
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.490500 ;
+    ANTENNAGATEAREA 0.489000 ;
     PORT
       LAYER li1 ;
         RECT 3.360 1.340 3.560 1.660 ;
@@ -4295,20 +6528,15 @@ MACRO sky130_as_sc_hs__nand4_2
     END
   END D
   OBS
-      LAYER pwell ;
-        RECT 3.980 0.110 4.130 0.120 ;
       LAYER li1 ;
         RECT 0.150 0.710 1.210 0.880 ;
         RECT 0.150 0.280 0.380 0.710 ;
         RECT 1.000 0.450 1.210 0.710 ;
-        RECT 1.380 0.680 3.145 0.890 ;
-        RECT 1.380 0.620 1.720 0.680 ;
-        RECT 2.810 0.670 3.145 0.680 ;
-        RECT 2.880 0.620 3.145 0.670 ;
-        RECT 1.850 0.450 2.180 0.510 ;
+        RECT 1.380 0.670 3.145 0.890 ;
+        RECT 1.850 0.450 2.180 0.480 ;
         RECT 1.000 0.280 2.180 0.450 ;
-        RECT 2.350 0.450 2.710 0.510 ;
-        RECT 3.315 0.450 3.505 0.890 ;
+        RECT 2.350 0.450 2.710 0.480 ;
+        RECT 3.315 0.450 3.505 0.620 ;
         RECT 4.050 0.450 4.435 0.510 ;
         RECT 2.350 0.280 4.435 0.450 ;
   END
@@ -4574,7 +6802,7 @@ MACRO sky130_as_sc_hs__nor2_2
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 0.310 1.060 0.980 1.340 ;
+        RECT 0.390 1.060 0.980 1.340 ;
     END
   END A
   PIN B
@@ -4592,21 +6820,21 @@ MACRO sky130_as_sc_hs__nor2_2
     ANTENNADIFFAREA 0.641200 ;
     PORT
       LAYER li1 ;
-        RECT 1.420 1.750 1.680 2.070 ;
-        RECT 1.420 1.520 2.160 1.750 ;
-        RECT 1.780 0.890 2.160 1.520 ;
-        RECT 0.570 0.710 2.160 0.890 ;
-        RECT 0.570 0.280 0.790 0.710 ;
-        RECT 1.440 0.280 1.660 0.710 ;
+        RECT 1.460 1.750 1.640 1.860 ;
+        RECT 1.460 1.520 2.160 1.750 ;
+        RECT 1.870 0.890 2.160 1.520 ;
+        RECT 0.600 0.710 2.160 0.890 ;
+        RECT 0.600 0.520 0.780 0.710 ;
+        RECT 1.460 0.500 1.640 0.710 ;
     END
   END Y
   OBS
       LAYER li1 ;
-        RECT 0.150 1.800 0.380 2.460 ;
-        RECT 1.000 2.240 2.160 2.460 ;
-        RECT 1.000 1.800 1.240 2.240 ;
-        RECT 1.910 1.920 2.160 2.240 ;
-        RECT 0.150 1.570 1.240 1.800 ;
+        RECT 0.170 1.740 0.350 2.460 ;
+        RECT 1.030 2.290 2.100 2.460 ;
+        RECT 1.030 1.740 1.210 2.290 ;
+        RECT 1.930 2.130 2.100 2.290 ;
+        RECT 0.170 1.570 1.210 1.740 ;
   END
 END sky130_as_sc_hs__nor2_2
 
@@ -4901,13 +7129,13 @@ MACRO sky130_as_sc_hs__or2_2
     ANTENNADIFFAREA 0.475600 ;
     PORT
       LAYER li1 ;
-        RECT 1.515 2.080 1.685 2.450 ;
-        RECT 1.515 1.950 2.000 2.080 ;
-        RECT 1.560 1.910 2.000 1.950 ;
-        RECT 1.700 0.830 2.000 1.910 ;
-        RECT 1.515 0.770 2.000 0.830 ;
+        RECT 1.515 2.080 1.685 2.280 ;
+        RECT 1.515 1.950 1.970 2.080 ;
+        RECT 1.560 1.910 1.970 1.950 ;
+        RECT 1.700 0.830 1.970 1.910 ;
+        RECT 1.515 0.770 1.970 0.830 ;
         RECT 1.515 0.660 1.870 0.770 ;
-        RECT 1.515 0.280 1.685 0.660 ;
+        RECT 1.515 0.420 1.685 0.660 ;
     END
   END Y
   OBS
@@ -4918,7 +7146,7 @@ MACRO sky130_as_sc_hs__or2_2
         RECT 0.540 0.860 0.710 1.600 ;
         RECT 1.275 1.330 1.445 1.610 ;
         RECT 1.275 1.000 1.530 1.330 ;
-        RECT 0.540 0.280 0.775 0.860 ;
+        RECT 0.540 0.450 0.775 0.860 ;
   END
 END sky130_as_sc_hs__or2_2
 
@@ -5005,16 +7233,17 @@ MACRO sky130_as_sc_hs__or2_4
     ANTENNADIFFAREA 0.934800 ;
     PORT
       LAYER li1 ;
-        RECT 1.515 2.080 1.685 2.450 ;
-        RECT 1.515 1.950 2.000 2.080 ;
-        RECT 1.560 1.910 2.000 1.950 ;
-        RECT 1.700 1.270 2.000 1.910 ;
+        RECT 1.515 2.080 1.685 2.280 ;
+        RECT 1.515 1.950 1.960 2.080 ;
+        RECT 1.560 1.910 1.960 1.950 ;
+        RECT 1.700 1.290 1.960 1.910 ;
+        RECT 1.700 1.270 2.000 1.290 ;
         RECT 2.380 1.270 2.560 2.460 ;
         RECT 1.700 1.100 2.560 1.270 ;
-        RECT 1.700 0.830 2.000 1.100 ;
-        RECT 1.515 0.770 2.000 0.830 ;
+        RECT 1.700 0.830 1.940 1.100 ;
+        RECT 1.515 0.770 1.940 0.830 ;
         RECT 1.515 0.660 1.870 0.770 ;
-        RECT 1.515 0.280 1.685 0.660 ;
+        RECT 1.515 0.450 1.685 0.660 ;
         RECT 2.380 0.280 2.560 1.100 ;
     END
   END Y
@@ -5026,7 +7255,7 @@ MACRO sky130_as_sc_hs__or2_4
         RECT 0.540 0.860 0.710 1.600 ;
         RECT 1.275 1.330 1.445 1.610 ;
         RECT 1.275 1.000 1.530 1.330 ;
-        RECT 0.540 0.280 0.775 0.860 ;
+        RECT 0.540 0.450 0.775 0.860 ;
   END
 END sky130_as_sc_hs__or2_4
 
@@ -5249,7 +7478,7 @@ MACRO sky130_as_sc_hs__xnor2_2
       LAYER li1 ;
         RECT 0.605 0.105 0.775 0.590 ;
         RECT 3.590 0.105 3.760 0.830 ;
-        RECT 4.640 0.105 4.810 0.750 ;
+        RECT 4.640 0.105 4.810 0.540 ;
         RECT 0.000 -0.085 5.060 0.105 ;
       LAYER met1 ;
         RECT 0.000 -0.240 5.060 0.240 ;
@@ -5262,8 +7491,8 @@ MACRO sky130_as_sc_hs__xnor2_2
     PORT
       LAYER li1 ;
         RECT 0.445 1.680 1.220 1.850 ;
-        RECT 0.445 1.100 0.700 1.680 ;
-        RECT 2.720 1.000 2.950 1.330 ;
+        RECT 0.445 1.100 0.680 1.680 ;
+        RECT 2.720 1.000 2.940 1.330 ;
         RECT 2.720 0.900 2.890 1.000 ;
         RECT 2.130 0.730 2.890 0.900 ;
         RECT 2.130 0.660 2.300 0.730 ;
@@ -5286,7 +7515,7 @@ MACRO sky130_as_sc_hs__xnor2_2
         RECT 4.300 0.900 4.560 1.500 ;
         RECT 4.300 0.830 4.470 0.900 ;
         RECT 4.210 0.650 4.470 0.830 ;
-        RECT 4.210 0.280 4.380 0.650 ;
+        RECT 4.210 0.500 4.380 0.650 ;
     END
   END Y
   PIN B
@@ -5301,7 +7530,6 @@ MACRO sky130_as_sc_hs__xnor2_2
   OBS
       LAYER li1 ;
         RECT 0.100 2.020 0.345 2.440 ;
-        RECT 1.645 2.230 1.815 2.440 ;
         RECT 1.390 2.060 3.410 2.230 ;
         RECT 0.100 0.930 0.275 2.020 ;
         RECT 0.880 1.040 1.210 1.260 ;
@@ -5319,10 +7547,10 @@ MACRO sky130_as_sc_hs__xnor2_2
         RECT 0.175 0.280 0.345 0.750 ;
         RECT 1.390 0.640 1.815 0.830 ;
         RECT 1.645 0.450 1.815 0.640 ;
-        RECT 1.645 0.280 2.240 0.450 ;
-        RECT 3.120 0.280 3.290 1.500 ;
+        RECT 3.120 0.560 3.290 1.500 ;
         RECT 3.870 1.330 4.040 1.840 ;
         RECT 3.870 1.000 4.130 1.330 ;
+        RECT 1.645 0.280 2.190 0.450 ;
       LAYER met1 ;
         RECT 0.110 2.270 0.400 2.290 ;
         RECT 0.110 2.080 2.330 2.270 ;
@@ -5404,7 +7632,7 @@ MACRO sky130_as_sc_hs__xnor2_4
     PORT
       LAYER li1 ;
         RECT 0.445 1.680 1.220 1.850 ;
-        RECT 0.445 1.100 0.700 1.680 ;
+        RECT 0.445 1.100 0.680 1.680 ;
         RECT 2.720 1.000 2.950 1.330 ;
         RECT 2.720 0.900 2.890 1.000 ;
         RECT 2.130 0.730 2.890 0.900 ;
@@ -5427,8 +7655,8 @@ MACRO sky130_as_sc_hs__xnor2_4
         RECT 5.155 1.340 5.325 2.450 ;
         RECT 4.300 1.130 5.325 1.340 ;
         RECT 4.300 0.910 4.540 1.130 ;
-        RECT 4.290 0.280 4.470 0.910 ;
-        RECT 5.155 0.275 5.325 1.130 ;
+        RECT 4.290 0.580 4.470 0.910 ;
+        RECT 5.155 0.600 5.325 1.130 ;
     END
   END Y
   PIN B
@@ -5443,7 +7671,6 @@ MACRO sky130_as_sc_hs__xnor2_4
   OBS
       LAYER li1 ;
         RECT 0.100 2.020 0.345 2.440 ;
-        RECT 1.645 2.230 1.815 2.440 ;
         RECT 1.390 2.060 3.410 2.230 ;
         RECT 0.100 0.930 0.275 2.020 ;
         RECT 0.880 1.040 1.210 1.260 ;
@@ -5461,10 +7688,10 @@ MACRO sky130_as_sc_hs__xnor2_4
         RECT 0.175 0.280 0.345 0.750 ;
         RECT 1.390 0.640 1.815 0.830 ;
         RECT 1.645 0.450 1.815 0.640 ;
-        RECT 1.645 0.280 2.240 0.450 ;
-        RECT 3.120 0.280 3.290 1.500 ;
+        RECT 3.120 0.490 3.290 1.500 ;
         RECT 3.870 1.330 4.040 1.840 ;
         RECT 3.870 1.000 4.130 1.330 ;
+        RECT 1.645 0.280 2.180 0.450 ;
       LAYER met1 ;
         RECT 0.110 2.270 0.400 2.290 ;
         RECT 0.110 2.080 2.330 2.270 ;

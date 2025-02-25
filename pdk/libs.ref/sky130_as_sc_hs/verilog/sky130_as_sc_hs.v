@@ -183,6 +183,303 @@ assign Y = (A & B) | (B & C) | (A & C);
 
 endmodule
 
+module sky130_as_sc_hs__ao22_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | (C & D);
+
+endmodule
+
+module sky130_as_sc_hs__ao22_4 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | (C & D);
+
+endmodule
+
+module sky130_as_sc_hs__aoi31_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A & B & C) | D);
+
+endmodule
+
+module sky130_as_sc_hs__ao31_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B & C) | D;
+
+endmodule
+
+module sky130_as_sc_hs__ao31_4 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B & C) | D;
+
+endmodule
+
+module sky130_as_sc_hs__oai21_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A | B) & C);
+
+endmodule
+
+module sky130_as_sc_hs__oa21_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A | B) & C;
+
+endmodule
+
+module sky130_as_sc_hs__oa21_4 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A | B) & C;
+
+endmodule
+
+module sky130_as_sc_hs__oai22_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A | B) & (C | D));
+
+endmodule
+
+module sky130_as_sc_hs__oa22_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A | B) & (C | D);
+
+endmodule
+
+module sky130_as_sc_hs__oa22_4 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A | B) & (C | D);
+
+endmodule
+
+module sky130_as_sc_hs__aoi21_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A & B) | C);
+
+endmodule
+
+module sky130_as_sc_hs__ao21_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | C;
+
+endmodule
+
+module sky130_as_sc_hs__ao21_4 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = (A & B) | C;
+
+endmodule
+
+module sky130_as_sc_hs__ao21b_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ((~A) & B) | C;
+
+endmodule
+
+module sky130_as_sc_hs__ao21b_4 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ((~A) & B) | C;
+
+endmodule
+
+module sky130_as_sc_hs__aoi22_2 (
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A & B) | (C & D));
+
+endmodule
+
+module sky130_as_sc_hs__aoi21b_2 (
+	input A,
+	input B,
+	input C,
+	output Y,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+assign Y = ~((A & B) | (~C));
+
+endmodule
+
 module sky130_as_sc_hs__aoi211_2 (
 	input A,
 	input B,
