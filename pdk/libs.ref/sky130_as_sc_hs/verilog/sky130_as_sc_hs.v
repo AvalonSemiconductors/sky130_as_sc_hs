@@ -911,6 +911,57 @@ end
 
 endmodule
 
+module sky130_as_sc_hs__dyn_dfxtp_2 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(posedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dyn_dfxtp_4 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(posedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
+module sky130_as_sc_hs__dyn_dfxtn_2 (
+	input CLK,
+	input D,
+	output reg Q,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+always @(negedge CLK) begin
+	Q <= D;
+end
+
+endmodule
+
 module sky130_as_sc_hs__decap_3(
 	input VPWR,
 	input VGND,

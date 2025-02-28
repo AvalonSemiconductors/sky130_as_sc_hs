@@ -143,6 +143,12 @@ dfxtp_2 and dfxtn_2 and dfxfp_2 and dfxbp_2:
 dfxtp_4 and dfxtn_4 and dfxfp_4:
 ./characterize_flop.sh sky130_as_sc_hs__dfxtp_4 "0.0005, 0.00178, 0.0054, 0.017, 0.058, 0.1865, 0.62" "0.01, 0.02, 0.04, 0.09, 0.2, 0.45, 1.0" "0.01, 0.5, 1.0"
 
+dyn_dfxtp_2 and dyn_dfxtn_2:
+./characterize_flop.sh sky130_as_sc_hs__dyn_dfxtp_2 "0.0005, 0.00177, 0.005, 0.017, 0.042, 0.14, 0.31" "0.01, 0.02, 0.04, 0.09, 0.2, 0.45, 1.0" "0.01, 0.5, 1.0"
+
+dyn_dfxtp_4:
+./characterize_flop.sh sky130_as_sc_hs__dyn_dfxtp_4 "0.0005, 0.00178, 0.0054, 0.017, 0.058, 0.1865, 0.63" "0.01, 0.02, 0.04, 0.09, 0.2, 0.45, 1.0" "0.01, 0.5, 1.0"
+
 clkbuff_4:
 ./characterize.sh sky130_as_sc_hs__clkbuff_4 "0.0005, 0.0016, 0.005, 0.016, 0.051, 0.162, 0.528" "0.01, 0.023, 0.053, 0.122, 0.28, 0.65, 1.5"
 
