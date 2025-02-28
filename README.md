@@ -26,7 +26,7 @@ Then, `"RUN_CVC": 0` as the Circuit Validity Check is not yet supported.
 Within the section `"pdk::sky130*"`, add an entry for this library:
 ```json
 "scl::sky130_as_sc_hs": {
-	"CLOCK_PERIOD": 30
+	"CLOCK_PERIOD": 10
 }
 ```
 
@@ -41,8 +41,10 @@ or disable the XOR check:
 
 From there, the makefile actions to run the OpenLane flow should work as normal.
 
-## Work in progress
+## Cell Options
 
-Currently, there are two areas in which progress is being made on this library. The first is finishing the set of basic logic gate functions by creating XOR or XNOR cells. Then, all the existing cells will undergo an optimization process (i.e. expanding transistor widths as much as possible).
+You can choose between using static DFFs and dynamic DFFs. Layouts built with static DFFs can be operated at any clock frequency, including a stopped clock and are the default option. Dynamic DFFs are smaller and faster, but use a capacitor charge to store a bit, meaning the data will be erased if not refreshed regularly. As a result, layouts built with dynamic DFFs must be run with a certain minimum clock speed and thus have a maximum clock pulse width limitation. The value of this limit is still TBD.
 
-I am also experimenting with different ways of constructing DFFs that will hopefully have improved timing characteristics over the traditional leader/follower DFF already in the library.
+Additional performance may be gained by removing slower AOI cells from synthesis, which comes at the tradeoff of decreasing density slightly.
+
+The directory `config_options` contains no_synth lists for these options, which may be used with the `NO_SYNTH_CELL_LIST` OpenLane configuration option. The default is static DFFs with all AOI cells enabled.
