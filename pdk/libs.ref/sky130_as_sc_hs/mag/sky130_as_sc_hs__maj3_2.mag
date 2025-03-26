@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1740403620
+timestamp 1740770853
 << nwell >>
 rect -38 262 866 582
 << pwell >>
@@ -114,7 +114,7 @@ rect 80 178 110 204
 rect 152 266 182 298
 rect 238 266 268 298
 rect 152 250 268 266
-rect 152 216 168 250
+rect 152 216 190 250
 rect 240 216 268 250
 rect 152 204 268 216
 rect 152 178 182 204
@@ -151,7 +151,7 @@ rect 576 22 606 48
 rect 662 22 692 48
 << polycont >>
 rect 60 216 94 250
-rect 168 216 240 250
+rect 190 216 240 250
 rect 326 216 410 250
 rect 484 216 518 250
 rect 592 216 626 250
@@ -196,7 +196,7 @@ rect 44 216 60 250
 rect 94 216 110 250
 rect 44 214 110 216
 rect 152 250 256 266
-rect 152 216 168 250
+rect 152 216 190 250
 rect 240 216 256 250
 rect 152 214 256 216
 rect 310 250 426 266
@@ -312,7 +312,7 @@ flabel locali 340 238 340 238 0 FreeSans 200 0 0 0 C
 flabel locali 680 221 714 255 0 FreeSans 200 0 0 0 Y
 port 8 nsew signal output
 flabel locali 697 238 697 238 0 FreeSans 200 0 0 0 Y
-flabel polycont 187 238 187 238 0 FreeSans 200 0 0 0 B
+flabel locali 187 238 187 238 0 FreeSans 200 0 0 0 B
 << properties >>
 string FIXED_BBOX 0 0 828 544
 string GDS_FILE $PDKPATH/libs.ref/sky130_as_sc_hs/gds/sky130_as_sc_hs__maj3_2.gds

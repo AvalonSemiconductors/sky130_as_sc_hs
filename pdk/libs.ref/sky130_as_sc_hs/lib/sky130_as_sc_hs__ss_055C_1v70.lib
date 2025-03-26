@@ -1,0 +1,3513 @@
+library ("sky130_as_sc_hs__ss_055C_1v70") {
+  delay_model : "table_lookup";
+  
+  technology ("cmos");
+  
+  capacitive_load_unit (1.0, "pf");
+  current_unit : "1mA";
+  leakage_power_unit : "1nW";
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  pulling_resistance_unit : "1kohm";
+  
+  operating_conditions ("ss_055C_1v70") {
+    process : 1.0;
+    temperature : 55.0;
+    voltage : 1.7;
+    tree_type : "balanced_tree";
+    process_corner : "Typical";
+  }
+  default_operating_conditions : "ss_055C_1v70";
+  nom_process : 1.0;
+  nom_temperature : 55.0;
+  nom_voltage : 1.7;
+  
+  voltage_map (VPWR, 1.7);
+  voltage_map (VGND, 0.0);
+  voltage_map (VDD, 1.7);
+  voltage_map (GND, 0.0);
+  voltage_map (VPB, 1.7);
+  voltage_map (VNB, 0.0);
+  
+  input_threshold_pct_fall : 50.0;
+  input_threshold_pct_rise : 50.0;
+  output_threshold_pct_fall : 50.0;
+  output_threshold_pct_rise : 50.0;
+  slew_derate_from_library : 1.0;
+  slew_lower_threshold_pct_fall : 20.0;
+  slew_lower_threshold_pct_rise : 20.0;
+  slew_upper_threshold_pct_fall : 80.0;
+  slew_upper_threshold_pct_rise : 80.0;
+  
+  default_cell_leakage_power : 0;
+  default_fanout_load : 1;
+  default_inout_pin_cap : 0;
+  default_input_pin_cap : 0;
+  default_max_transition : 1.5;
+  default_output_pin_cap : 0;
+  default_arc_mode : "worst_edges";
+  default_constraint_arc_mode : "worst";
+  
+  in_place_swap_mode : "match_footprint";
+  
+  lu_table_template (hold_template_3x7) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ("1, 2, 3");
+    index_2 ("1, 2, 3, 4, 5, 6, 7");
+  }
+  
+  lu_table_template (setup_template_3x7) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ("1, 2, 3");
+    index_2 ("1, 2, 3, 4, 5, 6, 7");
+  }
+  
+  lu_table_template (delay_template_7x7) {
+    variable_1 : total_output_net_capacitance;
+    variable_2 : input_net_transition;
+    index_1 ("1, 2, 3, 4, 5, 6, 7");
+    index_2 ("1, 2, 3, 4, 5, 6, 7");
+  }
+  
+  power_lut_template ("energy_template_7x7") {
+    variable_1 : total_output_net_capacitance;
+    variable_2 : input_transition_time;
+    index_1 ("1, 2, 3, 4, 5, 6, 7");
+    index_2 ("1, 2, 3, 4, 5, 6, 7");
+  }
+  
+  cell (sky130_as_sc_hs__dyn_dfxtp_2) {
+    cell_footprint : sky130_as_sc_hs__dyn_dfxtp;
+    area : 21.2704;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+      
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.31;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dyn_dfxtp_4) {
+    cell_footprint : sky130_as_sc_hs__dyn_dfxtp;
+    area : 23.7728;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+ 
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.63;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dyn_dfxtn_2) {
+    cell_footprint : sky130_as_sc_hs__dyn_dfxtn;
+    area : 21.2704;
+    ff (IQ, IQN) {
+      clocked_on : "!CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.31;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "falling_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxtp_2) {
+    cell_footprint : sky130_as_sc_hs__dfxtp;
+    area : 23.7728;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.29;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxtp_4) {
+    cell_footprint : sky130_as_sc_hs__dfxtp;
+    area : 26.2752;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxtn_2) {
+    cell_footprint : sky130_as_sc_hs__dfxtn;
+    area : 23.7728;
+    ff (IQ, IQN) {
+      clocked_on : "!CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "falling_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxtn_4) {
+    cell_footprint : sky130_as_sc_hs__dfxtn;
+    area : 26.2752;
+    ff (IQ, IQN) {
+      clocked_on : "!CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "falling_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxfp_2) {
+    cell_footprint : sky130_as_sc_hs__dfxfp;
+    area : 23.7728;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (QN) {
+      direction : output;
+      function : "IQN";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxfp_4) {
+    cell_footprint : sky130_as_sc_hs__dfxfp;
+    area : 26.2752;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (QN) {
+      direction : output;
+      function : "IQN";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__dfxbp_2) {
+    cell_footprint : sky130_as_sc_hs__dfxbp;
+    area : 26.2752;
+    ff (IQ, IQN) {
+      clocked_on : "CLK";
+      next_state : "D";
+    }
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (CLK) {
+      direction : input;
+      clock : "true";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.0;
+
+    }
+    pin (QN) {
+      direction : output;
+      function : "IQN";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+    pin (Q) {
+      direction : output;
+      function : "IQ";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5;
+      max_transition : 1.5;
+      timing () {
+        related_pin : "CLK";
+        timing_sense : non_unate;
+        timing_type : "rising_edge";
+
+      }
+    }
+  }
+  cell (sky130_as_sc_hs__diode_2) {
+    area : 2.5024;
+    cell_footprint : sky130_as_sc_hs__diode;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (DIODE) {
+      direction : "input";
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+    }
+  }
+  cell (sky130_as_sc_hs__xnor2_2) {
+    cell_footprint : sky130_as_sc_hs__xnor2;
+    area : 13.7632;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(((A & B) | (!A & !B)))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.3;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__xnor2_4) {
+    cell_footprint : sky130_as_sc_hs__xnor2;
+    area : 16.2656;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A&!B) | (A&B)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.586;
+      max_transition : 1.5;
+
+    }
+  }
+  cell ("sky130_as_sc_hs__clkbuff_4") {
+    cell_footprint : "sky130_as_sc_hs__clkbuff";
+    area : 7.5072;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      max_capacitance : 0.528;
+      max_transition : 1.5;
+
+    }
+  }
+  cell ("sky130_as_sc_hs__clkbuff_8") {
+    cell_footprint : "sky130_as_sc_hs__clkbuff";
+    area : 13.7632;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      max_capacitance : 0.91;
+      max_transition : 1.5;
+
+    }
+  }
+  cell ("sky130_as_sc_hs__clkbuff_11") {
+    cell_footprint : "sky130_as_sc_hs__clkbuff";
+    area : 20.0192;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 1.5;
+      max_transition : 1.645267;
+
+    }
+  }
+  cell (sky130_as_sc_hs__buff_2) {
+    cell_footprint : sky130_as_sc_hs__buff;
+    area : 5.0048;
+    driver_waveform_fall : "ramp";
+    driver_waveform_rise : "ramp";
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.29;
+      max_transition : 1.5;
+      power_down_function : "(!VPWR + VGND)";
+
+    }
+  }
+  cell (sky130_as_sc_hs__buff_4) {
+    cell_footprint : sky130_as_sc_hs__buff;
+    area : 7.5072;
+    driver_waveform_fall : "ramp";
+    driver_waveform_rise : "ramp";
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.58;
+      max_transition : 1.5;
+      power_down_function : "(!VPWR + VGND)";
+
+    }
+  }
+  cell (sky130_as_sc_hs__buff_6) {
+    cell_footprint : sky130_as_sc_hs__buff;
+    area : 8.7584;
+    driver_waveform_fall : "ramp";
+    driver_waveform_rise : "ramp";
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.85;
+      max_transition : 1.5;
+      power_down_function : "(!VPWR + VGND)";
+
+    }
+  }
+  cell (sky130_as_sc_hs__buff_8) {
+    cell_footprint : sky130_as_sc_hs__buff;
+    area : 15.0144;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 5.0;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 5.0;
+      max_transition : 8.094608;
+
+    }
+  }
+  cell (sky130_as_sc_hs__buff_11) {
+    cell_footprint : sky130_as_sc_hs__buff;
+    area : 20.0192;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 5.0;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 5.0;
+      max_transition : 5.150516;
+
+    }
+  }
+  cell ("sky130_as_sc_hs__tieh") {
+    cell_footprint : sky130_as_sc_hs__tieh;
+    area : 3.7536;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin ("ONE") {
+      direction : "output";
+      function : "1";
+      max_capacitance : 1.9038;
+      max_transition : 1.0;
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      power_down_function : "!VPWR";
+	}
+  }
+  cell ("sky130_as_sc_hs__tiel") {
+	cell_footprint : sky130_as_sc_hs__tiel;
+	area : 3.7536;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin ("ZERO") {
+	  direction : "output";
+	  function : "0";
+	  max_capacitance : 2.0468;
+	  max_transition : 1.0;
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      power_down_function : "VGND";
+	}
+  }
+  cell (sky130_as_sc_hs__inv_2) {
+    cell_footprint : sky130_as_sc_hs__inv;
+    area : 3.7536;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A)";
+      max_capacitance : 0.316;
+      max_transition : 1.5;
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+
+    }
+  }
+  cell (sky130_as_sc_hs__inv_4) {
+    cell_footprint : sky130_as_sc_hs__inv;
+    area : 6.256;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A)";
+      max_capacitance : 0.615;
+      max_transition : 1.5;
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+
+    }
+  }
+  cell (sky130_as_sc_hs__inv_6) {
+    cell_footprint : sky130_as_sc_hs__inv;
+    area : 8.7584;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A)";
+      max_capacitance : 0.89;
+      max_transition : 1.5;
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+
+    }
+  }
+  cell (sky130_as_sc_hs__mux2_2) {
+    cell_footprint : sky130_as_sc_hs__mux2;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (S) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A&!S) | (B&S)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.306;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__mux2_4) {
+    cell_footprint : sky130_as_sc_hs__mux2;
+    area : 15.0144;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (S) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A&!S) | (B&S)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.595;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nor2_2) {
+    cell_footprint : sky130_as_sc_hs__nor2;
+    area : 6.256;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A&!B)";
+      max_capacitance : 0.145;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nor2_4) {
+    cell_footprint : sky130_as_sc_hs__nor2;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A&!B)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.307;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nor2b_2) {
+    cell_footprint : sky130_as_sc_hs__nor2b;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A&B)";
+      max_capacitance : 0.1445;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__or2_2) {
+    cell_footprint : sky130_as_sc_hs__or2;
+    area : 6.256;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A) | (B))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.274;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__or2_4) {
+    cell_footprint : sky130_as_sc_hs__or2;
+    area : 8.7584;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A) | (B))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.5557;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nand2_2) {
+    cell_footprint : sky130_as_sc_hs__nand2;
+    area : 6.256;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A) | (!B)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.29;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nand2_4) {
+    cell_footprint : sky130_as_sc_hs__nand2;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A) | (!B)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.575;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nand2b_2) {
+    cell_footprint : sky130_as_sc_hs__nand2b;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A) | (!B)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.28;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__and2_2) {
+    cell_footprint : sky130_as_sc_hs__and2;
+    area : 7.5072;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A) & (B))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.305;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__and2_4) {
+    cell_footprint : sky130_as_sc_hs__and2;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A) & (B))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.597;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nand3_2) {
+    cell_footprint : sky130_as_sc_hs__nand3;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A) | (!B) | (!C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.288;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nor3_2) {
+    cell_footprint : sky130_as_sc_hs__nor3;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A) & (!B) & (!C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.098;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__nand4_2) {
+    cell_footprint : sky130_as_sc_hs__nand4;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!A) | (!B) | (!C) | (!D)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.282;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__maj3_2) {
+    cell_footprint : sky130_as_sc_hs__maj3;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A & B) | (B & C) | (A & C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.286;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__maj3_4) {
+    cell_footprint : sky130_as_sc_hs__maj3;
+    area : 13.7632;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(A & B) | (B & C) | (A & C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.582;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__aoi21_2) {
+    cell_footprint : sky130_as_sc_hs__aoi21;
+    area : 8.7584;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A&B)|C))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.156;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao21_2) {
+    cell_footprint : sky130_as_sc_hs__ao21;
+    area : 8.7584;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B)|C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.305;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao21_4) {
+    cell_footprint : sky130_as_sc_hs__ao21;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B)|C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.6;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__aoi21b_2) {
+    cell_footprint : sky130_as_sc_hs__aoi21b;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A&B)|(!C)))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.156;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao21b_2) {
+    cell_footprint : sky130_as_sc_hs__ao21b;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((!A)&B)|C";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.305;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao21b_4) {
+    cell_footprint : sky130_as_sc_hs__ao21b;
+    area : 15.0144;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((!A)&B)|C";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.6;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__aoi22_2) {
+    cell_footprint : sky130_as_sc_hs__aoi22;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A&B)|(C&D)))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.153;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao22_2) {
+    cell_footprint : sky130_as_sc_hs__ao22;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B)|(C&D))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.317;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao22_4) {
+    cell_footprint : sky130_as_sc_hs__ao22;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B)|(C&D))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.61;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__aoi31_2) {
+    cell_footprint : sky130_as_sc_hs__aoi31;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A&B&C)|D))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.14;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao31_2) {
+    cell_footprint : sky130_as_sc_hs__ao31;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B&C)|D)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.317;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__ao31_4) {
+    cell_footprint : sky130_as_sc_hs__ao31;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A&B&C)|D)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.61;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__aoi211_2) {
+    cell_footprint : sky130_as_sc_hs__aoi211;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "!((A & B) | C | D)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.1045;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oai21_2) {
+    cell_footprint : sky130_as_sc_hs__oai21;
+    area : 8.7584;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A|B)&C))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.151;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oa21_2) {
+    cell_footprint : sky130_as_sc_hs__oa21;
+    area : 10.0096;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A|B)&C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.314159;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oa21_4) {
+    cell_footprint : sky130_as_sc_hs__oa21;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A|B)&C)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.606;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oai22_2) {
+    cell_footprint : sky130_as_sc_hs__oai22;
+    area : 12.512;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "(!((A|B)&(C|D)))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.138;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oa22_2) {
+    cell_footprint : sky130_as_sc_hs__oa22;
+    area : 11.2608;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A|B)&(C|D))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.321;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__oa22_4) {
+    cell_footprint : sky130_as_sc_hs__oa22;
+    area : 13.7632;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "((A|B)&(C|D))";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.615;
+      max_transition : 1.5;
+
+    }
+  }
+  cell (sky130_as_sc_hs__iao211_2) {
+    cell_footprint : sky130_as_sc_hs__iao211;
+    area : 13.7632;
+    pg_pin (VGND) {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin (VNB) {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin (VPB) {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin (VPWR) {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+    pin (A) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (B) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (C) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (D) {
+      direction : input;
+      clock : "false";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_transition : 1.5;
+
+    }
+    pin (Y) {
+      direction : output;
+      function : "!((A | B) & C & D)";
+      related_ground_pin : "VGND";
+      related_power_pin : "VPWR";
+      max_capacitance : 0.1372;
+      max_transition : 1.5;
+
+    }
+  }
+  cell ("sky130_as_sc_hs__decap_3") {
+    cell_footprint : "sky130_as_sc_hs__decap";
+    area : 3.7536;
+    pg_pin ("VGND") {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin ("VNB") {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin ("VPB") {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin ("VPWR") {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+  }
+  cell ("sky130_as_sc_hs__decap_4") {
+    cell_footprint : "sky130_as_sc_hs__decap";
+    area : 5.0048;
+    pg_pin ("VGND") {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin ("VNB") {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin ("VPB") {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin ("VPWR") {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+  }
+  cell ("sky130_as_sc_hs__decap_16") {
+    cell_footprint : "sky130_as_sc_hs__decap";
+    area : 20.0192;
+    pg_pin ("VGND") {
+      pg_type : "primary_ground";
+      related_bias_pin : "VNB";
+      voltage_name : "VGND";
+    }
+    pg_pin ("VNB") {
+      pg_type : "pwell";
+      physical_connection : "device_layer";
+      voltage_name : "VNB";
+    }
+    pg_pin ("VPB") {
+      pg_type : "nwell";
+      physical_connection : "device_layer";
+      voltage_name : "VPB";
+    }
+    pg_pin ("VPWR") {
+      pg_type : "primary_power";
+      related_bias_pin : "VPB";
+      voltage_name : "VPWR";
+    }
+  }
+}
