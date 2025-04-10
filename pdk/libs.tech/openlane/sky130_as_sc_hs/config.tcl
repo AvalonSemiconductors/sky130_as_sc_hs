@@ -4,7 +4,7 @@ set current_folder [file dirname [file normalize [info script]]]
 set ::env(LIB_TYPICAL) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_as_sc_hs__tt_025C_1v80.lib"
 # TODO: generate lib files for these corners
 set ::env(LIB_FASTEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_as_sc_hs__ff_005C_1v90.lib"
-set ::env(LIB_SLOWEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_as_sc_hs__tt_025C_1v80.lib"
+set ::env(LIB_SLOWEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_as_sc_hs__ss_055C_1v70.lib"
 
 set ::env(LIB_SYNTH) $::env(LIB_TYPICAL)
 
