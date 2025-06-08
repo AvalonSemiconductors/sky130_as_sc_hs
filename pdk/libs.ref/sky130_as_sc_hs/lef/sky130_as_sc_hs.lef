@@ -5165,7 +5165,7 @@ MACRO sky130_as_sc_hs__inv_2
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 0.170 1.000 0.400 1.340 ;
+        RECT 0.170 1.000 0.410 1.340 ;
     END
   END A
   PIN Y
@@ -5175,7 +5175,7 @@ MACRO sky130_as_sc_hs__inv_2
     PORT
       LAYER li1 ;
         RECT 0.605 1.400 0.775 2.460 ;
-        RECT 0.570 0.940 0.790 1.400 ;
+        RECT 0.580 0.940 0.790 1.400 ;
         RECT 0.605 0.530 0.775 0.940 ;
     END
   END Y
@@ -5245,7 +5245,7 @@ MACRO sky130_as_sc_hs__inv_4
     ANTENNAGATEAREA 0.984000 ;
     PORT
       LAYER li1 ;
-        RECT 0.170 1.000 0.400 1.340 ;
+        RECT 0.170 1.000 0.410 1.340 ;
     END
   END A
   PIN Y
@@ -5255,10 +5255,10 @@ MACRO sky130_as_sc_hs__inv_4
     PORT
       LAYER li1 ;
         RECT 0.605 1.340 0.775 2.460 ;
-        RECT 0.570 1.310 0.790 1.340 ;
+        RECT 0.590 1.310 0.790 1.340 ;
         RECT 1.475 1.310 1.645 2.460 ;
-        RECT 0.570 1.110 1.645 1.310 ;
-        RECT 0.570 1.000 0.790 1.110 ;
+        RECT 0.590 1.110 1.645 1.310 ;
+        RECT 0.590 1.000 0.790 1.110 ;
         RECT 0.605 0.530 0.775 1.000 ;
         RECT 1.475 0.520 1.645 1.110 ;
     END
@@ -5333,7 +5333,7 @@ MACRO sky130_as_sc_hs__inv_6
     ANTENNAGATEAREA 1.476000 ;
     PORT
       LAYER li1 ;
-        RECT 0.170 1.000 0.400 1.340 ;
+        RECT 0.170 1.000 0.410 1.340 ;
     END
   END A
   PIN Y
@@ -7650,7 +7650,7 @@ MACRO sky130_as_sc_hs__or2_2
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER li1 ;
-        RECT 0.150 1.000 0.370 1.430 ;
+        RECT 0.150 1.000 0.380 1.430 ;
     END
   END A
   PIN B
@@ -7659,33 +7659,33 @@ MACRO sky130_as_sc_hs__or2_2
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER li1 ;
-        RECT 0.880 1.000 1.105 1.440 ;
+        RECT 0.890 1.000 1.105 1.440 ;
     END
   END B
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.475600 ;
+    ANTENNADIFFAREA 0.459200 ;
     PORT
       LAYER li1 ;
-        RECT 1.515 2.080 1.685 2.280 ;
-        RECT 1.515 1.950 1.970 2.080 ;
+        RECT 1.525 2.080 1.695 2.280 ;
+        RECT 1.525 1.950 1.970 2.080 ;
         RECT 1.560 1.910 1.970 1.950 ;
-        RECT 1.700 0.830 1.970 1.910 ;
-        RECT 1.515 0.770 1.970 0.830 ;
-        RECT 1.515 0.660 1.870 0.770 ;
-        RECT 1.515 0.420 1.685 0.660 ;
+        RECT 1.710 0.830 1.970 1.910 ;
+        RECT 1.525 0.770 1.970 0.830 ;
+        RECT 1.525 0.660 1.870 0.770 ;
+        RECT 1.525 0.420 1.695 0.660 ;
     END
   END Y
   OBS
       LAYER li1 ;
         RECT 0.175 1.780 0.345 2.460 ;
         RECT 0.175 1.610 1.445 1.780 ;
-        RECT 0.175 1.600 0.710 1.610 ;
-        RECT 0.540 0.860 0.710 1.600 ;
+        RECT 0.175 1.600 0.720 1.610 ;
+        RECT 0.550 0.860 0.720 1.600 ;
         RECT 1.275 1.330 1.445 1.610 ;
-        RECT 1.275 1.000 1.530 1.330 ;
-        RECT 0.540 0.450 0.775 0.860 ;
+        RECT 1.275 1.000 1.540 1.330 ;
+        RECT 0.550 0.450 0.775 0.860 ;
   END
 END sky130_as_sc_hs__or2_2
 
