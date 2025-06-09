@@ -787,6 +787,17 @@ module sky130_as_sc_hs__diode_2 (
 
 endmodule
 
+module sky130_as_sc_hs__hcf_10 (
+	input HCF,
+	
+	input VPWR,
+	input VGND,
+	input VPB,
+	input VNB
+);
+
+endmodule
+
 module sky130_as_sc_hs__dfxtp_2 (
 	input CLK,
 	input D,
