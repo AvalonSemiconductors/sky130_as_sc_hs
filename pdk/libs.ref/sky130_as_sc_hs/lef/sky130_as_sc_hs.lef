@@ -7651,7 +7651,7 @@ MACRO sky130_as_sc_hs__or2_2
     ANTENNAGATEAREA 0.246000 ;
     PORT
       LAYER li1 ;
-        RECT 0.170 1.000 0.400 1.430 ;
+        RECT 0.170 1.000 0.410 1.430 ;
     END
   END A
   PIN B
