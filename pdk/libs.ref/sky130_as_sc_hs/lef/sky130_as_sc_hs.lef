@@ -2240,7 +2240,7 @@ MACRO sky130_as_sc_hs__buff_6
     ANTENNAGATEAREA 0.492000 ;
     PORT
       LAYER li1 ;
-        RECT 0.155 0.960 0.420 1.480 ;
+        RECT 0.160 0.960 0.430 1.480 ;
     END
   END A
   PIN Y
@@ -2354,7 +2354,7 @@ MACRO sky130_as_sc_hs__buff_8
     ANTENNAGATEAREA 0.738000 ;
     PORT
       LAYER li1 ;
-        RECT 0.170 0.990 0.420 1.500 ;
+        RECT 0.170 0.990 0.430 1.500 ;
     END
   END A
   PIN Y
